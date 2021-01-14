@@ -1,0 +1,2666 @@
+<PISI>
+    <Package>
+        <Name>ario</Name>
+        <Summary xml:lang="en">Ario is a GTK+ client for MPD.</Summary>
+        <Description xml:lang="en">ario - A GTK client for MPD (Music player daemon) inspired by Rhythmbox but much lighter and faster.</Description>
+        <IsA>app:gui</IsA>
+        <PartOf>multimedia.sound</PartOf>
+        <License>GPLv2</License>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>avahi</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>taglib</Dependency>
+            <Dependency>gnutls</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>dbus-glib</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>libunique</Dependency>
+            <Dependency>avahi-libs</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>avahi-glib</Dependency>
+            <Dependency>libmpdclient</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <COMAR script="pakhandler.py">System.PackageHandler</COMAR>
+        </Provides>
+        <History>
+            <Update release="1">
+                <Date>2020-12-13</Date>
+                <Version>1.6</Version>
+                <Comment>First Beta build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>1474830</InstalledSize>
+        <PackageSize>391039</PackageSize>
+        <PackageHash>cc19d91ce03999e7c67db521508779887196462d</PackageHash>
+        <InstallTarHash>aabd80a245bd2ae8e9d500a9560c0d26933e41f8</InstallTarHash>
+        <PackageURI>a/ario/ario-1.6-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>ario</Name>
+            <Homepage>http://ario-player.sourceforge.net/</Homepage>
+            <Packager>
+                <Name>Pisilinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>cdk</Name>
+        <Summary xml:lang="en">This is a modified/enhanced version of Cdk.</Summary>
+        <Description xml:lang="en">Cdk stands for &apos;Curses Development Kit&apos; and it currently contains 21 ready to use widgets which facilitate the speedy development of full screen curses programs. This little project of mine started as a test to see how compatible my Linux machine was to other UNIX breeds. While doing this I discovered Ncurses, and played with it. These widgets are the result of over a years worth of playing.</Description>
+        <IsA>library</IsA>
+        <PartOf>programming.library</PartOf>
+        <License>custom</License>
+        <RuntimeDependencies>
+            <Dependency>ncurses</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-11-28</Date>
+                <Version>5.0.20200923</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>773381</InstalledSize>
+        <PackageSize>171487</PackageSize>
+        <PackageHash>f1170b423907d24c7e334183eb4e895b78c84d9e</PackageHash>
+        <InstallTarHash>b0fbe945bc5f8c3a337a10a4fc5be8fb001df7cb</InstallTarHash>
+        <PackageURI>c/cdk/cdk-5.0.20200923-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>cdk</Name>
+            <Homepage>https://invisible-island.net/cdk/cdk.html</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>claws-mail</Name>
+        <Summary xml:lang="en">Claws Mail is an email client (and news reader), based on GTK+.</Summary>
+        <Description xml:lang="en">Claws Mail is a lightweight and highly configurable email client and news reader based on the GTK+ GUI toolkit.</Description>
+        <IsA>app:gui</IsA>
+        <PartOf>network.mail</PartOf>
+        <License>GPLv3</License>
+        <RuntimeDependencies>
+            <Dependency>curl</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>perl</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>gpgme</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>gnutls</Dependency>
+            <Dependency>nettle</Dependency>
+            <Dependency>libical</Dependency>
+            <Dependency>librsvg</Dependency>
+            <Dependency>libetpan</Dependency>
+            <Dependency>compface</Dependency>
+            <Dependency>dbus-glib</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libarchive</Dependency>
+            <Dependency>libgpg-error</Dependency>
+            <Dependency>startup-notification</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2021-01-13</Date>
+                <Version>3.17.8.14</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>13696629</InstalledSize>
+        <PackageSize>2758602</PackageSize>
+        <PackageHash>314a1147ca33792d20159280b11a65a34c335e06</PackageHash>
+        <InstallTarHash>a38f402982770b5e90c1bc0b10feeaa3d6924b35</InstallTarHash>
+        <PackageURI>c/claws-mail/claws-mail-3.17.8.14-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>claws-mail</Name>
+            <Homepage>https://www.claws-mail.org/</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>deadbeef</Name>
+        <Summary xml:lang="en">Audio player for GNU/Linux systems with X11.</Summary>
+        <Summary xml:lang="tr">X11 ile GNU / Linux sistemleri için ses çalar</Summary>
+        <Summary xml:lang="pl">Lkki i przejrzysty odtwarzacz plików muzycznych</Summary>
+        <Description xml:lang="en">DeaDBeeF (as in 0xDEADBEEF) is a modular audio player for GNU/Linux, *BSD, OpenSolaris, macOS, and other UNIX-like systems.</Description>
+        <Description xml:lang="tr">DeaDBeeF (0xDEADBEEF gibi) X11 ile GNU / Linux sistemleri (şimdi olsa da FreeBSD, X olmaksızın düz konsolda çalışır ve OpenSolaris) için bir ses oynatıcısıdır.</Description>
+        <Description xml:lang="pl">DeaDBeeF Program pozwala odtwarzać najpopularniejsze formaty muzyki, a także płyty Audio-CD i strumienie audio emitowane za pośrednictwem Internetu. Jego ogromną zaletą jest prostota, dopracowanie oraz minimalne zapotrzebowanie na zasoby systemowe.</Description>
+        <IsA>app:gui</IsA>
+        <PartOf>multimedia.sound</PartOf>
+        <License>Zlib</License>
+        <License>GPLv2</License>
+        <License>LGPLv2.1</License>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>flac</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>faad2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>mpg123</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>libmad</Dependency>
+            <Dependency>libzip</Dependency>
+            <Dependency>imlib2</Dependency>
+            <Dependency>wavpack</Dependency>
+            <Dependency>libcdio</Dependency>
+            <Dependency>libcddb</Dependency>
+            <Dependency>jansson</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>opusfile</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>cdparanoia</Dependency>
+            <Dependency>libsndfile</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libdispatch</Dependency>
+            <Dependency>libsamplerate</Dependency>
+            <Dependency>pulseaudio-libs</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="14">
+                <Date>2021-01-10</Date>
+                <Version>1.8.5</Version>
+                <Comment>Version bump.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="13">
+                <Date>2020-06-29</Date>
+                <Version>1.8.4</Version>
+                <Comment>Version bump.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="12">
+                <Date>2020-03-20</Date>
+                <Version>1.8.3</Version>
+                <Comment>Version bump.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="11">
+                <Date>2020-03-08</Date>
+                <Version>1.8.2</Version>
+                <Comment>Rebuild New T.</Comment>
+                <Name>Mustafa Cinasal</Name>
+                <Email>muscnsl@gmail.com</Email>
+            </Update>
+            <Update release="10">
+                <Date>2019-09-28</Date>
+                <Version>1.8.2</Version>
+                <Comment>Version bump.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="9">
+                <Date>2019-06-26</Date>
+                <Version>1.8.1</Version>
+                <Comment>Version bump.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="8">
+                <Date>2019-04-14</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version bump.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="7">
+                <Date>2018-09-01</Date>
+                <Version>0.7.20</Version>
+                <Comment>Rebuild New T.</Comment>
+                <Name>Mustafa Cinasal</Name>
+                <Email>muscnsl@gmail.com</Email>
+            </Update>
+            <Update release="6">
+                <Date>2018-04-28</Date>
+                <Version>0.7.20</Version>
+                <Comment>Rebuild ffmpeg.</Comment>
+                <Name>Mustafa Cinasal</Name>
+                <Email>muscnsl@pisilinux.org</Email>
+            </Update>
+            <Update release="5">
+                <Date>2018-02-10</Date>
+                <Version>0.7.20</Version>
+                <Comment>Release Bump</Comment>
+                <Name>Pisi Linux Community</Name>
+                <Email>admin@pisilinux.org</Email>
+            </Update>
+            <Update release="4">
+                <Date>2017-02-18</Date>
+                <Version>0.7.20</Version>
+                <Comment>Release Bump</Comment>
+                <Name>Pisi Linux Community</Name>
+                <Email>admin@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2016-06-09</Date>
+                <Version>0.7.20</Version>
+                <Comment>Release Bump</Comment>
+                <Name>Pisi Linux Community</Name>
+                <Email>admin@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2016-05-17</Date>
+                <Version>0.7.2</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2015-12-25</Date>
+                <Version>0.6.2</Version>
+                <Comment>First release</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>12102074</InstalledSize>
+        <PackageSize>3352816</PackageSize>
+        <PackageHash>58b84f6d2a1b53686d797e192928a139b4cf1025</PackageHash>
+        <InstallTarHash>bc99b98d3fda4f1f748701fac5a1d8661f9c0f53</InstallTarHash>
+        <PackageURI>d/deadbeef/deadbeef-1.8.5-14-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>deadbeef</Name>
+            <Homepage>https://deadbeef.sourceforge.io/</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>florb</Name>
+        <Summary xml:lang="en">A simple map viewer and GPX editor.</Summary>
+        <Description xml:lang="en">florb is a really simple map viewer and GPX editor written in C++ using the FLTK UI toolkit. florb makes it easy to create and edit tracks for planning short and extended trips into the wild green. Or anywhere else for that matter.</Description>
+        <IsA>app:gui</IsA>
+        <PartOf>unknown</PartOf>
+        <License>MIT</License>
+        <RuntimeDependencies>
+            <Dependency>fltk</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>gpsd</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>tinyxml2</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-12-19</Date>
+                <Version>1.1</Version>
+                <Comment>First build from git (include patches from @pekdon).</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>1036968</InstalledSize>
+        <PackageSize>316040</PackageSize>
+        <PackageHash>19c8186765936f7c088c1e4ff38641ff92bad8f7</PackageHash>
+        <InstallTarHash>8ddccdc277c65e099b35331dfc8530731614efb3</InstallTarHash>
+        <PackageURI>f/florb/florb-1.1-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>florb</Name>
+            <Homepage>http://florb.shugaa.de/</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>fbida</Name>
+        <Summary xml:lang="en">The fbida project contains a few applications for viewing and editing images, with the main focus being photos.</Summary>
+        <Description xml:lang="en">The fbida project contains a few applications for viewing and editing images, with the main focus being photos.</Description>
+        <IsA>app</IsA>
+        <PartOf>multimedia.graphics</PartOf>
+        <License>GPLv2</License>
+        <RuntimeDependencies>
+            <Dependency>mesa</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>giflib</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXpm</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>libpcd</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>pixman</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libexif</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libepoxy</Dependency>
+            <Dependency>openmotif</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>ghostscript</Dependency>
+            <Dependency>poppler-glib</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-06-23</Date>
+                <Version>2.14</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>530947</InstalledSize>
+        <PackageSize>162399</PackageSize>
+        <PackageHash>118734a3648af3d9dd48fcb13db11d137632ed76</PackageHash>
+        <InstallTarHash>3c06436e51777f6737aacc088f39ec86a66511d5</InstallTarHash>
+        <PackageURI>f/fbida/fbida-2.14-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>fbida</Name>
+            <Homepage>https://www.kraxel.org/blog/linux/fbida/</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>f2fs-tools</Name>
+        <Summary xml:lang="en">Userland tools for the f2fs filesystem.</Summary>
+        <Description xml:lang="en">Tools for Flash-Friendly File System (F2FS).</Description>
+        <IsA>app:console</IsA>
+        <PartOf>hardware.disk</PartOf>
+        <License>GPLv2</License>
+        <License>LGPLv2.1</License>
+        <RuntimeDependencies>
+            <Dependency>libutil-linux</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2021-01-12</Date>
+                <Version>1.14.0</Version>
+                <Comment>First Beta build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>568894</InstalledSize>
+        <PackageSize>181741</PackageSize>
+        <PackageHash>ed34e30f8d989686339a0bfee3ea82901e464566</PackageHash>
+        <InstallTarHash>1ef86ca1f87e7974f7800222b676ed8f0a513654</InstallTarHash>
+        <PackageURI>f/f2fs-tools/f2fs-tools-1.14.0-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>f2fs-tools</Name>
+            <Homepage>https://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-tools.git/about/</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>ffmpegthumbnailer</Name>
+        <Summary xml:lang="en">Lightweight video thumbnailer that can be used by file managers to create thumbnails for video files</Summary>
+        <Description xml:lang="en">FFmpegthumbnailer is a lightweight video thumbnailer that can be used by file managers to create thumbnails for your video files. The thumbnailer uses ffmpeg to decode frames from the video files, so supported videoformats depend on the configuration flags of ffmpeg.</Description>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <PartOf>unknown</PartOf>
+        <License>GPLv2</License>
+        <RuntimeDependencies>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libpng</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="7">
+                <Date>2019-11-30</Date>
+                <Version>2.2.2</Version>
+                <Comment>Ver. bump</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="6">
+                <Date>2019-07-18</Date>
+                <Version>2.2.0</Version>
+                <Comment>Ver. bump</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="5">
+                <Date>2014-12-15</Date>
+                <Version>2.0.9</Version>
+                <Comment>Rebuild for ffmpeg</Comment>
+                <Name>Kamil Atlı</Name>
+                <Email>suvari@pisilinux.org</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-09-26</Date>
+                <Version>2.0.9</Version>
+                <Comment>Version bump</Comment>
+                <Name>Richard de Bruin</Name>
+                <Email>richdb@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-06-19</Date>
+                <Version>2.0.8</Version>
+                <Comment>Rebuild for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-11-30</Date>
+                <Version>2.0.8</Version>
+                <Comment>Rebuild for ffmpeg.</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2012-08-28</Date>
+                <Version>2.0.8</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>290641</InstalledSize>
+        <PackageSize>84293</PackageSize>
+        <PackageHash>e9a67dcd65d28372acc93986d6df6f45627791d2</PackageHash>
+        <InstallTarHash>34ad2a6b56b7f7dc8c136dba6deb2e17da38315b</InstallTarHash>
+        <PackageURI>f/ffmpegthumbnailer/ffmpegthumbnailer-2.2.2-7-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>ffmpegthumbnailer</Name>
+            <Homepage>https://github.com/dirkvdb/ffmpegthumbnailer</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>gpart</Name>
+        <Summary xml:lang="en">Partition table rescue/guessing tool</Summary>
+        <Description xml:lang="en">Gpart is a small tool which tries to guess what partitions are on a PC type harddisk in case the primary partition table was damaged.</Description>
+        <IsA>app:gui</IsA>
+        <PartOf>unknown</PartOf>
+        <License>GPLv2</License>
+        <History>
+            <Update release="2">
+                <Date>2021-01-12</Date>
+                <Version>0.3</Version>
+                <Comment>Version bump.</Comment>
+                <Name>AYDIN ATMACA</Name>
+                <Email>aydinatmaca@gmail.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-12-15</Date>
+                <Version>0.2.1</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>82936</InstalledSize>
+        <PackageSize>33799</PackageSize>
+        <PackageHash>9cfb58c5fd7d1514acb0a9006623d9a17dccb5b1</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>g/gpart/gpart-0.3-2-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>gpart</Name>
+            <Homepage>https://github.com/baruch/gpart</Homepage>
+            <Packager>
+                <Name>AYDIN ATMACA</Name>
+                <Email>aydinatmaca@gmail.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>gpick</Name>
+        <Summary xml:lang="en">Gpick is an advanced color picker and palette editing tool.</Summary>
+        <Description xml:lang="en">Gpick is an application that allows you to sample any color from anywhere on the desktop, and use it to create palettes (i.e. collections of colors) for use in graphic design applications.</Description>
+        <IsA>app:gui</IsA>
+        <PartOf>multimedia.graphics</PartOf>
+        <License>BSD-3-Clause</License>
+        <RuntimeDependencies>
+            <Dependency>lua</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="2">
+                <Date>2020-12-31</Date>
+                <Version>0.2.6</Version>
+                <Comment>Release.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="1">
+                <Date>2020-12-04</Date>
+                <Version>0.2.6_rc1</Version>
+                <Comment>First build</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>1416551</InstalledSize>
+        <PackageSize>448377</PackageSize>
+        <PackageHash>293052705968ba411ae4c9c78d07a44a93df42d8</PackageHash>
+        <InstallTarHash>8daa28a98318cd4b69ba87440a76a601558a611d</InstallTarHash>
+        <PackageURI>g/gpick/gpick-0.2.6-2-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>gpick</Name>
+            <Homepage>http://www.gpick.org/</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>geeqie</Name>
+        <Summary xml:lang="en">Geeqie is a lightweight image viewer for Linux, BSDs and compatibles.</Summary>
+        <Description xml:lang="en">Geeqie can be used as a simple, fast, database-free image viewer, but equally it can be used to manage large collections of images.</Description>
+        <IsA>app:gui</IsA>
+        <PartOf>multimedia.graphics</PartOf>
+        <License>GPLv2</License>
+        <RuntimeDependencies>
+            <Dependency>lua</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>lirc</Dependency>
+            <Dependency>exiv2</Dependency>
+            <Dependency>fbida</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>lcms2</Dependency>
+            <Dependency>lua51</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>zenity</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>gphoto2</Dependency>
+            <Dependency>openjpeg2</Dependency>
+            <Dependency>exiv2-libs</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>ffmpegthumbnailer</Dependency>
+            <Dependency>perl-Image-ExifTool</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-12-03</Date>
+                <Version>1.6</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>18127593</InstalledSize>
+        <PackageSize>1245706</PackageSize>
+        <PackageHash>0f763c70c9eec00e0e8e59da6b2e4bcb14181702</PackageHash>
+        <InstallTarHash>2e4d5a4e548334fb66a00712d8137ed367adf8ad</InstallTarHash>
+        <PackageURI>g/geeqie/geeqie-1.6-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>geeqie</Name>
+            <Homepage>http://www.geeqie.org/</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>gparted</Name>
+        <Summary xml:lang="en">Gnome Partition tool based on GNU-Parted</Summary>
+        <Summary xml:lang="tr">GNU Parted tabanlı Gnome disk bölümleme aracı</Summary>
+        <Description xml:lang="en">GParted is the Gnome Partition Editor application. GParted is an industrial-strength package for creating, destroying, resizing, moving, checking and copying partitions, and the filesystems on them. This is useful for creating space for new operating systems, reorganizing disk usage, copying data residing on hard disks and mirroring one partition with another (disk imaging).</Description>
+        <Description xml:lang="tr">GParted Gnome masaüstü ortamının disk bölümleme uygulamasıdır. Bu program, disk bölümleme, dosya sistemleri oluşturma, silme, boyutlandırma, taşıma, kontrol ve kopyalama işlemlerini yapabilir. Yeni bir işletim sistemi için yer açmak, disk kullanımını yeniden düzenlemek, verileri diskin bir başka bölümüne aynalamak ve yerleştirmek için faydalıdır.</Description>
+        <IsA>app:gui</IsA>
+        <PartOf>unknown</PartOf>
+        <License>GPLv2</License>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>xterm</Dependency>
+            <Dependency>gpart</Dependency>
+            <Dependency>atkmm</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>gtkmm3</Dependency>
+            <Dependency>parted</Dependency>
+            <Dependency>glibmm</Dependency>
+            <Dependency>mtools</Dependency>
+            <Dependency>ntfs-3g</Dependency>
+            <Dependency>cairomm</Dependency>
+            <Dependency>pangomm</Dependency>
+            <Dependency>xfsdump</Dependency>
+            <Dependency>xfsprogs</Dependency>
+            <Dependency>jfsutils</Dependency>
+            <Dependency>xdg-utils</Dependency>
+            <Dependency>libsigc++</Dependency>
+            <Dependency>f2fs-tools</Dependency>
+            <Dependency>dosfstools</Dependency>
+            <Dependency>nilfs-utils</Dependency>
+            <Dependency>exfat-utils</Dependency>
+            <Dependency>btrfs-progs</Dependency>
+            <Dependency>reiserfsprogs</Dependency>
+            <Dependency>libutil-linux</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="7">
+                <Date>2021-01-12</Date>
+                <Version>1.1.0</Version>
+                <Comment>Version bump.</Comment>
+                <Name>AYDIN ATMACA</Name>
+                <Email>aydinatmaca@gmail.com</Email>
+            </Update>
+            <Update release="6">
+                <Date>2013-12-15</Date>
+                <Version>0.17.0</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+            <Update release="5">
+                <Date>2013-10-07</Date>
+                <Version>0.16.2</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@pisilinux.org</Email>
+            </Update>
+            <Update release="4">
+                <Date>2013-08-06</Date>
+                <Version>0.16.1</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2013-07-28</Date>
+                <Version>0.14.1</Version>
+                <Comment>Dep Fixed</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-02-07</Date>
+                <Version>0.14.1</Version>
+                <Comment>Güncellendi.</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2012-11-14</Date>
+                <Version>0.14.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>7255850</InstalledSize>
+        <PackageSize>1613744</PackageSize>
+        <PackageHash>678e57fbb324a6f3c23dc59a48194363bf52f38f</PackageHash>
+        <InstallTarHash>72db6c2ad7f88e23533f3ef0ccbca4fa0e5e98ce</InstallTarHash>
+        <PackageURI>g/gparted/gparted-1.1.0-7-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>gparted</Name>
+            <Homepage>http://gparted.sourceforge.net/</Homepage>
+            <Packager>
+                <Name>AYDIN ATMACA</Name>
+                <Email>aydinatmaca@gmail</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>gromit-mpx</Name>
+        <Summary xml:lang="en">Gromit-MPX is a multi-pointer GTK3 port of the original Gromit desktop annotation tool.</Summary>
+        <Description xml:lang="en">It enables graphical annotations with several pointers at once and is A LOT faster than its predecessor since it uses the XCOMPOSITE extension where available.</Description>
+        <IsA>app</IsA>
+        <PartOf>desktop.misc</PartOf>
+        <License>GPLv2</License>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libappindicator</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-12-26</Date>
+                <Version>1.4</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>193090</InstalledSize>
+        <PackageSize>60527</PackageSize>
+        <PackageHash>f0775ead2b5c72a20fe9b4414cacbc1b0da7b331</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>g/gromit-mpx/gromit-mpx-1.4-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>gromit-mpx</Name>
+            <Homepage>https://github.com/bk138/gromit-mpx</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>gpsd</Name>
+        <Summary xml:lang="en">GPS daemon and library to support serial/USB GPS devices.</Summary>
+        <Description xml:lang="en">gpsd is a service daemon that monitor one or more GPSes attached to a host computer through serial or USB ports, making all data of the sensors available to be queried on TCP port 2947 of the host computer.</Description>
+        <PartOf>unknown</PartOf>
+        <License>BSD</License>
+        <RuntimeDependencies>
+            <Dependency>dbus</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libusb</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>libsocket</Dependency>
+            <Dependency>bluez-libs</Dependency>
+            <Dependency>python3-pyserial</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
+        <History>
+            <Update release="1">
+                <Date>2020-12-27</Date>
+                <Version>3.21</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>2972901</InstalledSize>
+        <PackageSize>536960</PackageSize>
+        <PackageHash>c56c4ad761b4b27d6d43a0b40bf29d7c0bf72c62</PackageHash>
+        <InstallTarHash>cee7eec931b6fad59dfeed07e07b43d95b40cd39</InstallTarHash>
+        <PackageURI>g/gpsd/gpsd-3.21-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>gpsd</Name>
+            <Homepage>https://gpsd.gitlab.io/gpsd/</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>gphoto2</Name>
+        <Summary xml:lang="en">Digital camera software.</Summary>
+        <Description xml:lang="en">gPhoto2 is a free, redistributable, ready to use set of digital camera software applications for Unix-like systems, written by a whole team of dedicated volunteers around the world. It supports more than 2500 cameras.</Description>
+        <IsA>app:console</IsA>
+        <PartOf>multimedia.misc</PartOf>
+        <License>GPLv2</License>
+        <RuntimeDependencies>
+            <Dependency>cdk</Dependency>
+            <Dependency>popt</Dependency>
+            <Dependency>aalib</Dependency>
+            <Dependency>libexif</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>readline</Dependency>
+            <Dependency>libgphoto2</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-03-24</Date>
+                <Version>2.5.23</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>905599</InstalledSize>
+        <PackageSize>182362</PackageSize>
+        <PackageHash>e676d15cd318aba707bc9fc753f3d5c2618f6f99</PackageHash>
+        <InstallTarHash>0149edd699de02ffe1817927674a5b47133bca91</InstallTarHash>
+        <PackageURI>g/gphoto2/gphoto2-2.5.23-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>gphoto2</Name>
+            <Homepage>http://www.gphoto.org/</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>jfsutils</Name>
+        <Summary xml:lang="en">IBM&apos;s Journaling Filesystem (JFS) Utilities</Summary>
+        <Summary xml:lang="tr">IBM&apos;in günlüklü dosya sistemi JFS için araçlar</Summary>
+        <Description xml:lang="en">Contains tools to work with JFS (Journaling Filesystem) developed by IBM.</Description>
+        <Description xml:lang="tr">IBM&apos;in geliştirdiği günlüklü dosya sistemi (JFS - Journalling File System) araçlarını içerir.</Description>
+        <IsA>app:console</IsA>
+        <PartOf>unknown</PartOf>
+        <License>GPLv2</License>
+        <RuntimeDependencies>
+            <Dependency>libutil-linux</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="3">
+                <Date>2021-01-12</Date>
+                <Version>1.1.15</Version>
+                <Comment>Rebuild</Comment>
+                <Name>AYDIN ATMACA</Name>
+                <Email>aydinatmaca@gmail.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-01-27</Date>
+                <Version>1.1.15</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2010-10-13</Date>
+                <Version>1.1.14</Version>
+                <Comment>First release</Comment>
+                <Name>Pisi Linux Admins</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>1158336</InstalledSize>
+        <PackageSize>197638</PackageSize>
+        <PackageHash>26b197b832757d0a7e7b78628c6a8ba57e773a0d</PackageHash>
+        <InstallTarHash>62b332faf553d639cd85332e75e21fc688a87d51</InstallTarHash>
+        <PackageURI>j/jfsutils/jfsutils-1.1.15-3-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>jfsutils</Name>
+            <Homepage>http://jfs.sourceforge.net/</Homepage>
+            <Packager>
+                <Name>AYDIN ATMACA</Name>
+                <Email>aydinatmaca@gmail</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>lucene++</Name>
+        <Summary xml:lang="en">An up to date C++ port of the popular Java Lucene library, a high-performance, full-featured text search engine.</Summary>
+        <Description xml:lang="en">Lucene++ is an up to date C++ port of the popular Java Lucene library, a high-performance, full-featured text search engine.</Description>
+        <IsA>library</IsA>
+        <PartOf>programming.library</PartOf>
+        <License>LGPLv3</License>
+        <License>Apache-2.0</License>
+        <RuntimeDependencies>
+            <Dependency>boost</Dependency>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-11-26</Date>
+                <Version>3.0.7</Version>
+                <Comment>First Release.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>10896972</InstalledSize>
+        <PackageSize>2153887</PackageSize>
+        <PackageHash>4c8bfe52e8c902e0a5e90aa9f3e8abaffda5cd24</PackageHash>
+        <InstallTarHash>17bed1f4ecad59ad85f39d5b5a14a63a42639e26</InstallTarHash>
+        <PackageURI>l/lucene++/lucene++-3.0.7-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>lucene++</Name>
+            <Homepage>https://github.com/luceneplusplus/LucenePlusPlus</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libappindicator</Name>
+        <Summary xml:lang="en">A library to allow applications to export a menu into the Unity Menu bar.</Summary>
+        <Description xml:lang="en">A library to allow applications to export a menu into the Unity Menu bar.</Description>
+        <IsA>library</IsA>
+        <PartOf>desktop.misc</PartOf>
+        <License>LGPL</License>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libindicator</Dependency>
+            <Dependency>libdbusmenu-glib</Dependency>
+            <Dependency>libdbusmenu-gtk3</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-12-26</Date>
+                <Version>12.10.0</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>166207</InstalledSize>
+        <PackageSize>39954</PackageSize>
+        <PackageHash>616ded2373909b0003d61a20dd122bccf3b6ed52</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>liba/libappindicator/libappindicator-12.10.0-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libappindicator</Name>
+            <Homepage>https://lazka.github.io/pgi-docs/AppIndicator3-0.1/index.html</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libdbusmenu-glib</Name>
+        <Summary xml:lang="en">GLIB bindings for libdbusmenu</Summary>
+        <Summary xml:lang="tr">libdbusmenu için GLIB bağlayıcıları</Summary>
+        <Description xml:lang="en">libdbusmenu is a small little library that was created by pulling out some common code out of indicator-applet. It passes a menu structure across DBus so that a program can create a menu simply without worrying about how it is displayed on the other side of the bus.</Description>
+        <Description xml:lang="tr">libdbusmenu, indicator-applet uygulamasında kullanılan bazı genel kodların ayrı bir kitaplık haline getirilmesiyle oluşturulmuş bir kitaplıktır. Bu kitaplık ile uygulamaların menü yapısı DBus ile başka uygulamalara iletilebilir, bu sayede uygulamalar karşı tarafta menünün nasıl gösterileceğini dikkate almadan menüler oluşturabilirler.</Description>
+        <IsA>library</IsA>
+        <PartOf>programming.misc</PartOf>
+        <License>LGPLv3</License>
+        <RuntimeDependencies>
+            <Dependency>libdbusmenu-common</Dependency>
+            <Dependency>json-glib</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-11-19</Date>
+                <Version>16.04.0</Version>
+                <Comment>Rebuild.For Beta System</Comment>
+                <Name>Ali Cengiz Kurt</Name>
+                <Email>alicengizkurt@gmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>114620</InstalledSize>
+        <PackageSize>38715</PackageSize>
+        <PackageHash>a45a1c9ae0909e8b4bc5932ee26a1c899e4c47df</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>libd/libdbusmenu-glib/libdbusmenu-glib-16.04.0-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libdbusmenu</Name>
+            <Homepage>https://launchpad.net/dbusmenu</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libdbusmenu-common</Name>
+        <Summary xml:lang="en">Common files for libdbusmenu libraries</Summary>
+        <Summary xml:lang="tr">libdbusmenu kitaplıkları için ortak dosyalar</Summary>
+        <Description xml:lang="en">libdbusmenu is a small little library that was created by pulling out some common code out of indicator-applet. It passes a menu structure across DBus so that a program can create a menu simply without worrying about how it is displayed on the other side of the bus.</Description>
+        <Description xml:lang="tr">libdbusmenu, indicator-applet uygulamasında kullanılan bazı genel kodların ayrı bir kitaplık haline getirilmesiyle oluşturulmuş bir kitaplıktır. Bu kitaplık ile uygulamaların menü yapısı DBus ile başka uygulamalara iletilebilir, bu sayede uygulamalar karşı tarafta menünün nasıl gösterileceğini dikkate almadan menüler oluşturabilirler.</Description>
+        <IsA>library</IsA>
+        <PartOf>programming.misc</PartOf>
+        <License>LGPLv3</License>
+        <History>
+            <Update release="1">
+                <Date>2020-11-19</Date>
+                <Version>16.04.0</Version>
+                <Comment>Rebuild.For Beta System</Comment>
+                <Name>Ali Cengiz Kurt</Name>
+                <Email>alicengizkurt@gmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>213560</InstalledSize>
+        <PackageSize>36915</PackageSize>
+        <PackageHash>76eb7d659a3df9bc761ed60436f97729741e6393</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>libd/libdbusmenu-common/libdbusmenu-common-16.04.0-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libdbusmenu</Name>
+            <Homepage>https://launchpad.net/dbusmenu</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libdbusmenu-gtk3</Name>
+        <Summary xml:lang="en">GTK 3.x libraries for libdbusmenu</Summary>
+        <Summary xml:lang="tr">libdbusmenu için GTK 3.x kitaplıkları</Summary>
+        <Description xml:lang="en">libdbusmenu is a small little library that was created by pulling out some common code out of indicator-applet. It passes a menu structure across DBus so that a program can create a menu simply without worrying about how it is displayed on the other side of the bus.</Description>
+        <Description xml:lang="tr">libdbusmenu, indicator-applet uygulamasında kullanılan bazı genel kodların ayrı bir kitaplık haline getirilmesiyle oluşturulmuş bir kitaplıktır. Bu kitaplık ile uygulamaların menü yapısı DBus ile başka uygulamalara iletilebilir, bu sayede uygulamalar karşı tarafta menünün nasıl gösterileceğini dikkate almadan menüler oluşturabilirler.</Description>
+        <IsA>library</IsA>
+        <PartOf>programming.misc</PartOf>
+        <License>LGPLv3</License>
+        <RuntimeDependencies>
+            <Dependency>libdbusmenu-glib</Dependency>
+            <Dependency>libdbusmenu-common</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-11-19</Date>
+                <Version>16.04.0</Version>
+                <Comment>Rebuild.For Beta System</Comment>
+                <Name>Ali Cengiz Kurt</Name>
+                <Email>alicengizkurt@gmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>110141</InstalledSize>
+        <PackageSize>31130</PackageSize>
+        <PackageHash>774ed36aae8ee6ee11403023416ed6c3d5246bff</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>libd/libdbusmenu-gtk3/libdbusmenu-gtk3-16.04.0-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libdbusmenu</Name>
+            <Homepage>https://launchpad.net/dbusmenu</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libdispatch</Name>
+        <Summary xml:lang="en">Grand Central Dispatch.</Summary>
+        <Description xml:lang="en">Grand Central Dispatch (GCD or libdispatch) provides comprehensive support for concurrent code execution on multicore hardware.</Description>
+        <IsA>library</IsA>
+        <PartOf>programming.library</PartOf>
+        <License>Apache-2</License>
+        <History>
+            <Update release="1">
+                <Date>2020-12-31</Date>
+                <Version>5.3</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>487727</InstalledSize>
+        <PackageSize>108795</PackageSize>
+        <PackageHash>23bd77cb8356bfd6c11c37ae7c5b410b5537049c</PackageHash>
+        <InstallTarHash>e3deae74dc220ca03df81324c90a65d700e20ac8</InstallTarHash>
+        <PackageURI>libd/libdispatch/libdispatch-5.3-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libdispatch</Name>
+            <Homepage>https://apple.github.io/swift-corelibs-libdispatch/</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libetpan</Name>
+        <Summary xml:lang="en">A portable middleware for email access.</Summary>
+        <Description xml:lang="en">The purpose of this mail library is to provide a portable, efficient framework for different kinds of mail access: IMAP, SMTP, POP and NNTP.</Description>
+        <IsA>library</IsA>
+        <PartOf>unknown</PartOf>
+        <License>custom</License>
+        <RuntimeDependencies>
+            <Dependency>db</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2021-01-13</Date>
+                <Version>1.9.4</Version>
+                <Comment>First Beta build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>826132</InstalledSize>
+        <PackageSize>252201</PackageSize>
+        <PackageHash>1a92982382ed7590483473aacc5c14f14ae642d0</PackageHash>
+        <InstallTarHash>bcdff6704b8ca59697653271813ba7e9bb968d06</InstallTarHash>
+        <PackageURI>libe/libetpan/libetpan-1.9.4-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libetpan</Name>
+            <Homepage>https://www.etpan.org/libetpan.html</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libgringotts</Name>
+        <Summary xml:lang="en">A small, thread-safe C library.</Summary>
+        <Description xml:lang="en">libgringotts is a small, thread-safe C library originally developed for Gringotts. Its purpose is to encapsulate data in an encrypted and compressed file.</Description>
+        <IsA>library</IsA>
+        <PartOf>programming.library</PartOf>
+        <License>GPLv2</License>
+        <RuntimeDependencies>
+            <Dependency>libmcrypt</Dependency>
+            <Dependency>mhash</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="4">
+                <Date>2020-03-22</Date>
+                <Version>1.2.1</Version>
+                <Comment>Rebuild.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-01-30</Date>
+                <Version>1.2.1</Version>
+                <Comment>Rebuild</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2011-07-06</Date>
+                <Version>1.2.1</Version>
+                <Comment>First release</Comment>
+                <Name>Pisi Linux Admins</Name>
+                <Email>admin@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>94636</InstalledSize>
+        <PackageSize>29475</PackageSize>
+        <PackageHash>37f123243ef41abfab565e405f2094d675d45e5e</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>libg/libgringotts/libgringotts-1.2.1-4-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libgringotts</Name>
+            <Homepage>https://directory.fsf.org/wiki/LibGringotts</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libindicator</Name>
+        <Summary xml:lang="en">A set of symbols and convience functions that all indicators would like to use.</Summary>
+        <Description xml:lang="en">A set of symbols and convience functions that all indicators would like to use. Not of real use outside of the Ayatana indicators project.</Description>
+        <IsA>library</IsA>
+        <PartOf>desktop.misc</PartOf>
+        <License>LGPL</License>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-12-26</Date>
+                <Version>12.10.1</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>187635</InstalledSize>
+        <PackageSize>46095</PackageSize>
+        <PackageHash>2071dabcbffa6b6ff48b471e04cd8ba16ec47075</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>libi/libindicator/libindicator-12.10.1-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libindicator</Name>
+            <Homepage>https://launchpad.net/libindicator</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libmpdclient</Name>
+        <Summary xml:lang="en">C library to implement a MPD client</Summary>
+        <Summary xml:lang="tr">MPD için istemci geliştirme kitaplığı</Summary>
+        <Summary xml:lang="pl">Biblioteka kliencka MPD</Summary>
+        <Description xml:lang="en">A stable, documented, asynchronous API library for interfacing MPD in the C, C++ and Objective C languages.</Description>
+        <Description xml:lang="tr">libmpdclient, MPD etkileşimi için C, C++ ve Object C dillerinde kullanılabilen istikrarlı, belgelendirilmiş, asenkron bir kitaplıktır.</Description>
+        <Description xml:lang="pl">Biblioteka do tworzenia klientów demona MPD (Music Player Daemon).</Description>
+        <IsA>library</IsA>
+        <PartOf>multimedia.plugin</PartOf>
+        <License>BSD</License>
+        <RuntimeDependencies>
+            <Dependency>vala</Dependency>
+            <Dependency>glib2</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="7">
+                <Date>2020-07-07</Date>
+                <Version>2.19</Version>
+                <Comment>Ver. bump</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="6">
+                <Date>2020-02-27</Date>
+                <Version>2.18</Version>
+                <Comment>Ver. bump</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="5">
+                <Date>2019-12-10</Date>
+                <Version>2.17</Version>
+                <Comment>Ver. bump</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="4">
+                <Date>2019-07-13</Date>
+                <Version>2.16</Version>
+                <Comment>Ver. bump</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-05-26</Date>
+                <Version>2.9</Version>
+                <Comment>rebuild.</Comment>
+                <Name>Kamil Atlı</Name>
+                <Email>suvarice@gmail.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-01-31</Date>
+                <Version>2.9</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2012-11-10</Date>
+                <Version>2.7</Version>
+                <Comment>First release</Comment>
+                <Name>marcin bojara</Name>
+                <Email>marcin@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>156404</InstalledSize>
+        <PackageSize>46104</PackageSize>
+        <PackageHash>79cd8e22eca571e09cc79ce2e46d6e151d84bb35</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>libm/libmpdclient/libmpdclient-2.19-7-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libmpdclient</Name>
+            <Homepage>https://www.musicpd.org/libs/libmpdclient/</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libnfs</Name>
+        <Summary xml:lang="en">NFS client library</Summary>
+        <Description xml:lang="en">LIBNFS is a client library for accessing NFS shares over a network.</Description>
+        <Description xml:lang="hu">A libnfs egy NFS-kezelő könyvtár, ami háromféle módon tud hozzáférést nyújtani az NFS-szolgáltatásokhoz</Description>
+        <IsA>library</IsA>
+        <PartOf>network.connection</PartOf>
+        <License>LGPLv2.1</License>
+        <License>GPLv3</License>
+        <License>BSDv2</License>
+        <RuntimeDependencies>
+            <Dependency>glibc</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="3">
+                <Date>2020-06-23</Date>
+                <Version>4.0.0</Version>
+                <Comment>Rebuild.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="2">
+                <Date>2019-10-28</Date>
+                <Version>4.0.0</Version>
+                <Comment>Ver. bump</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="1">
+                <Date>2018-07-03</Date>
+                <Version>3.0.0</Version>
+                <Comment>Latest revision from GitHub</Comment>
+                <Name>Mogyorósi Petra</Name>
+                <Email>squeakymouse@protonmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>400331</InstalledSize>
+        <PackageSize>103087</PackageSize>
+        <PackageHash>f4bb6c065353008b9446cca42d99b502640cb4b6</PackageHash>
+        <InstallTarHash>c617ddb7caabe310d151934f5563b44771973ccb</InstallTarHash>
+        <PackageURI>libn/libnfs/libnfs-4.0.0-3-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libnfs</Name>
+            <Homepage>https://github.com/sahlberg/libnfs</Homepage>
+            <Packager>
+                <Name>Mogyorósi Petra</Name>
+                <Email>squeakymouse@protonmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libpcd</Name>
+        <Summary xml:lang="en">libpcd is a tiny library for decoding PhotoCD images.</Summary>
+        <Description xml:lang="en">libpcd is a tiny library for decoding PhotoCD images. It used to come bundled with xpcd, but I&apos;ve decided to release it separately so other apps such as fbi and ida can use it too.</Description>
+        <IsA>library</IsA>
+        <PartOf>multimedia.graphics</PartOf>
+        <License>GPLv2</License>
+        <History>
+            <Update release="1">
+                <Date>2020-06-23</Date>
+                <Version>1.0.1</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>53437</InstalledSize>
+        <PackageSize>14420</PackageSize>
+        <PackageHash>2bca2cb2296eee868935942d1be8b9f2c152659a</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>libp/libpcd/libpcd-1.0.1-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libpcd</Name>
+            <Homepage>https://www.kraxel.org/blog/linux/libpcd/</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libsocket</Name>
+        <Summary xml:lang="en">libsocket is a library written in C for the purpose of simplifying the usage of AF_INET/AF_INET6 (internet domain) and AF_UNIX (unix domain) sockets.</Summary>
+        <Description xml:lang="en">libsocket is a library written in C for the purpose of simplifying the usage of AF_INET/AF_INET6 (internet domain) and AF_UNIX (unix domain) sockets. libsocket++ is an object-oriented wrapper around libsocket.</Description>
+        <IsA>library</IsA>
+        <PartOf>system.misc</PartOf>
+        <License>BSD</License>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-12-22</Date>
+                <Version>2.5.0</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>141578</InstalledSize>
+        <PackageSize>38316</PackageSize>
+        <PackageHash>b636f247276433c9aed6467fdad5c86481ab5605</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>libs/libsocket/libsocket-2.5.0-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libsocket</Name>
+            <Homepage>https://github.com/dermesser/libsocket</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libsoxr</Name>
+        <Summary xml:lang="en">The SoX Resampler library that aims to give fast and high quality results for any constant resampling ratio</Summary>
+        <Description xml:lang="en">The SoX Resampler library that aims to give fast and high quality results for any constant resampling ratio</Description>
+        <IsA>library</IsA>
+        <PartOf>multimedia.sound</PartOf>
+        <License>GPL</License>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libgomp</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-01-14</Date>
+                <Version>0.1.3</Version>
+                <Comment>First release.</Comment>
+                <Name>Idris Kalp</Name>
+                <Email>idriskalp@gmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>336701</InstalledSize>
+        <PackageSize>117469</PackageSize>
+        <PackageHash>21f72919261fc0a4d6a27e8eff3490108970ba95</PackageHash>
+        <InstallTarHash>cb0a0c86cfd2f9ba695d0325646cdc10b076cb32</InstallTarHash>
+        <PackageURI>libs/libsoxr/libsoxr-0.1.3-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libsoxr</Name>
+            <Homepage>https://sourceforge.net/p/soxr/wiki/Home/</Homepage>
+            <Packager>
+                <Name>Mathias Freire</Name>
+                <Email>mathiasfreire45@gmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mhash</Name>
+        <Summary xml:lang="en">A uniform interface to several hash algorithms.</Summary>
+        <Description xml:lang="en">mhash is a free library which provides a uniform interface to a large number of hash algorithms.</Description>
+        <IsA>library</IsA>
+        <PartOf>programming.library</PartOf>
+        <License>LGPLv2.1</License>
+        <History>
+            <Update release="4">
+                <Date>2020-03-22</Date>
+                <Version>0.9.9.9</Version>
+                <Comment>Rebuild.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-05-20</Date>
+                <Version>0.9.9.9</Version>
+                <Comment>Rebuild, remove unneeded patches.</Comment>
+                <Name>Serdar Soytetir</Name>
+                <Email>kaptan@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-01-31</Date>
+                <Version>0.9.9.9</Version>
+                <Comment>Rebuild</Comment>
+                <Name>Kamil Atlı</Name>
+                <Email>suvarice@gmail.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2011-01-30</Date>
+                <Version>0.9.9.9</Version>
+                <Comment>First release</Comment>
+                <Name>Pisi Linux Admins</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>275344</InstalledSize>
+        <PackageSize>110905</PackageSize>
+        <PackageHash>5ed8fce24feb540c11239a25dc9fde722cc49b0a</PackageHash>
+        <InstallTarHash>3e77eee9d56e78e49b73b83a3c3e2d0a287f59eb</InstallTarHash>
+        <PackageURI>m/mhash/mhash-0.9.9.9-4-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mhash</Name>
+            <Homepage>http://mhash.sourceforge.net/</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>mpd</Name>
+        <Summary xml:lang="en">Music Player Daemon</Summary>
+        <Description xml:lang="en">Music Player Daemon (MPD) is a flexible, powerful, server-side application for playing music. Through plugins and libraries it can play a variety of sound files while being controlled by its network protocol.</Description>
+        <IsA>service</IsA>
+        <PartOf>multimedia.stream</PartOf>
+        <License>GPLv2</License>
+        <RuntimeDependencies>
+            <Dependency>curl</Dependency>
+            <Dependency>flac</Dependency>
+            <Dependency>yajl</Dependency>
+            <Dependency>lame</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>samba</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>avahi</Dependency>
+            <Dependency>faad2</Dependency>
+            <Dependency>libao</Dependency>
+            <Dependency>shine</Dependency>
+            <Dependency>libmms</Dependency>
+            <Dependency>mpg123</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>openal</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>libgme</Dependency>
+            <Dependency>libmad</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libnfs</Dependency>
+            <Dependency>libcdio</Dependency>
+            <Dependency>libopus</Dependency>
+            <Dependency>libupnp</Dependency>
+            <Dependency>twolame</Dependency>
+            <Dependency>wavpack</Dependency>
+            <Dependency>zziplib</Dependency>
+            <Dependency>libsoxr</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libshout</Dependency>
+            <Dependency>libmpcdec</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>audiofile</Dependency>
+            <Dependency>libid3tag</Dependency>
+            <Dependency>libmikmod</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>avahi-libs</Dependency>
+            <Dependency>fluidsynth</Dependency>
+            <Dependency>libmodplug</Dependency>
+            <Dependency>libsndfile</Dependency>
+            <Dependency>libmpdclient</Dependency>
+            <Dependency>libsamplerate</Dependency>
+            <Dependency>libchromaprint</Dependency>
+            <Dependency>pulseaudio-libs</Dependency>
+            <Dependency>libcdio-paranoia</Dependency>
+            <Dependency>jack-audio-connection-kit</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="18">
+                <Date>2020-09-21</Date>
+                <Version>0.21.26</Version>
+                <Comment>Ver. bump</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="17">
+                <Date>2020-07-07</Date>
+                <Version>0.21.25</Version>
+                <Comment>Ver. bump</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="16">
+                <Date>2020-04-24</Date>
+                <Version>0.21.23</Version>
+                <Comment>Ver. bump</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="15">
+                <Date>2020-04-03</Date>
+                <Version>0.21.22</Version>
+                <Comment>Ver. bump</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="14">
+                <Date>2020-02-27</Date>
+                <Version>0.21.20</Version>
+                <Comment>Ver. bump</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="13">
+                <Date>2019-12-29</Date>
+                <Version>0.21.18</Version>
+                <Comment>Ver. bump</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="12">
+                <Date>2019-10-28</Date>
+                <Version>0.21.16</Version>
+                <Comment>Ver. bump</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="11">
+                <Date>2014-12-28</Date>
+                <Version>0.19.7</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="10">
+                <Date>2014-06-11</Date>
+                <Version>0.18.11</Version>
+                <Comment>Fixed startup errors.</Comment>
+                <Name>Aydın Demirel</Name>
+                <Email>aydin.demirel@pisilinux.org</Email>
+            </Update>
+            <Update release="9">
+                <Date>2014-06-08</Date>
+                <Version>0.18.11</Version>
+                <Comment>Rebuild.</Comment>
+                <Name>Aydın Demirel</Name>
+                <Email>aydin.demirel@pisilinux.org</Email>
+            </Update>
+            <Update release="8">
+                <Date>2014-05-26</Date>
+                <Version>0.18.11</Version>
+                <Comment>Version Bump.</Comment>
+                <Name>Kamil Atlı</Name>
+                <Email>suvarice@gmail.com</Email>
+            </Update>
+            <Update release="7">
+                <Date>2014-02-07</Date>
+                <Version>0.18.8</Version>
+                <Comment>Version Bump.</Comment>
+                <Name>Aydın Demirel</Name>
+                <Email>aydin.demirel@pisilinux.org</Email>
+            </Update>
+            <Update release="6">
+                <Date>2014-02-06</Date>
+                <Version>0.17.4</Version>
+                <Comment>Add tmpfiles</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+            <Update release="5">
+                <Date>2013-11-25</Date>
+                <Version>0.17.4</Version>
+                <Comment>Rebuild for ffmpeg.</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+            <Update release="4">
+                <Date>2013-07-07</Date>
+                <Version>0.17.4</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Marcin Bojara</Name>
+                <Email>marcin@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2013-05-31</Date>
+                <Version>0.17.3</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-05-31</Date>
+                <Version>0.17.1</Version>
+                <Comment>Fix dep, yajl</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2012-08-27</Date>
+                <Version>0.17.1</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>1597799</InstalledSize>
+        <PackageSize>545360</PackageSize>
+        <PackageHash>a047f6666b844b96644db751454fc1b31cac33b6</PackageHash>
+        <InstallTarHash>2ae40f5d320dfbe2158c01acfdfd2825bd3a91e0</InstallTarHash>
+        <PackageURI>m/mpd/mpd-0.21.26-18-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>mpd</Name>
+            <Homepage>https://www.musicpd.org/</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>ncmpcpp</Name>
+        <Summary xml:lang="en">NCurses Music Player Client (Plus Plus).</Summary>
+        <Summary xml:lang="tr">Ncurses tabanlı MPD istemcisi</Summary>
+        <Description xml:lang="en">ncmpcpp – featureful ncurses based MPD client inspired by ncmpc.</Description>
+        <Description xml:lang="tr">Ncmpcpp; etiket düzenleyici, çalma listesi düzenleyici, şarkı sözü desteği vb. özellikleri olan bir MPD istemcisidir.</Description>
+        <IsA>app:console</IsA>
+        <PartOf>multimedia.sound</PartOf>
+        <License>GPLv2</License>
+        <RuntimeDependencies>
+            <Dependency>mpd</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>fftw3</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>taglib</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>readline</Dependency>
+            <Dependency>libmpdclient</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="3">
+                <Date>2020-12-23</Date>
+                <Version>0.9.1</Version>
+                <Comment>Version bump</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="2">
+                <Date>2020-12-20</Date>
+                <Version>0.9</Version>
+                <Comment>Version bump</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="1">
+                <Date>2020-12-13</Date>
+                <Version>0.8.2</Version>
+                <Comment>0.9 release coming soon.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>2001269</InstalledSize>
+        <PackageSize>551746</PackageSize>
+        <PackageHash>d21b34a312b1acecd4750616867a79f9e53ce8e8</PackageHash>
+        <InstallTarHash>c57a74f696e9cbdca6591ee8c01fb550beb604e6</InstallTarHash>
+        <PackageURI>n/ncmpcpp/ncmpcpp-0.9.1-3-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>ncmpcpp</Name>
+            <Homepage>https://rybczak.net/ncmpcpp/</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>nilfs-utils</Name>
+        <Summary xml:lang="en">A log-structured file system supporting continuous snapshotting (userspace utils)</Summary>
+        <Description xml:lang="en">NILFS is a log-structured file system supporting versioning of the entire file system and continuous snapshotting which allows users to even restore files mistakenly overwritten or destroyed just a few seconds ago.</Description>
+        <IsA>app:gui</IsA>
+        <PartOf>unknown</PartOf>
+        <License>GPLv2</License>
+        <License>LGPLv2.1</License>
+        <RuntimeDependencies>
+            <Dependency>libutil-linux</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="3">
+                <Date>2021-01-12</Date>
+                <Version>2.2.8</Version>
+                <Comment>Version bump.</Comment>
+                <Name>AYDIN ATMACA</Name>
+                <Email>aydinatmaca@gmail.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-01-31</Date>
+                <Version>2.1.6</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Alihan Öztürk</Name>
+                <Email>alihan@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-12-15</Date>
+                <Version>2.1.5</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>427508</InstalledSize>
+        <PackageSize>107876</PackageSize>
+        <PackageHash>6848534090e5f33957df29e2e1553642426565d6</PackageHash>
+        <InstallTarHash>723f14756efad59f3113827100a0b2a6df30b687</InstallTarHash>
+        <PackageURI>n/nilfs-utils/nilfs-utils-2.2.8-3-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>nilfs-utils</Name>
+            <Homepage>https://nilfs.sourceforge.io/en/</Homepage>
+            <Packager>
+                <Name>AYDIN ATMACA</Name>
+                <Email>aydinatmaca@gmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>osmo</Name>
+        <Summary xml:lang="en">Osmo is a handy personal organizer, which includes calendar, tasks manager, address book and notes modules.</Summary>
+        <Description xml:lang="en">Osmo is a handy personal organizer, which includes calendar, tasks manager, address book and notes modules. It was designed to be a small, easy to use and good looking PIM tool to help to manage personal information. In its current state the organizer is quite convenient to use - for example, the user can perform nearly all operations using the keyboard. Also, a lot of parameters are configurable to meet the user&apos;s preferences. On the technical side, Osmo is GTK+ based tool which uses a plain XML database to store all personal data.</Description>
+        <IsA>app:gui</IsA>
+        <PartOf>office.misc</PartOf>
+        <License>GPLv2</License>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libical</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libarchive</Dependency>
+            <Dependency>webkit2gtk</Dependency>
+            <Dependency>libgringotts</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="9">
+                <Date>2020-07-12</Date>
+                <Version>0.4.4</Version>
+                <Comment>Ver. bump</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="8">
+                <Date>2020-03-22</Date>
+                <Version>0.4.2</Version>
+                <Comment>Ver. up</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+            <Update release="7">
+                <Date>2015-02-05</Date>
+                <Version>0.2.12</Version>
+                <Comment>Add missing Dependencies</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="6">
+                <Date>2014-06-19</Date>
+                <Version>0.2.12</Version>
+                <Comment>Rebuild for libtar</Comment>
+                <Name>Kamil Atlı</Name>
+                <Email>suvari@pisilinux.org</Email>
+            </Update>
+            <Update release="5">
+                <Date>2014-05-01</Date>
+                <Version>0.2.12</Version>
+                <Comment>Rebuild</Comment>
+                <Name>Burak Fazıl Ertürk</Name>
+                <Email>burakerturk@pisilinux.org</Email>
+            </Update>
+            <Update release="4">
+                <Date>2013-11-02</Date>
+                <Version>0.2.12</Version>
+                <Comment>Version bump</Comment>
+                <Name>Burak Fazıl Ertürk</Name>
+                <Email>burakerturk@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2013-05-25</Date>
+                <Version>0.2.10</Version>
+                <Comment>Patched.</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-05-25</Date>
+                <Version>0.2.10</Version>
+                <Comment>Disable libsyncml dep.</Comment>
+                <Name>Serdar Soytetir</Name>
+                <Email>kaptan@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2011-07-11</Date>
+                <Version>0.2.10</Version>
+                <Comment>First release</Comment>
+                <Name>Pisi Linux Admins</Name>
+                <Email>admin@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>1887734</InstalledSize>
+        <PackageSize>511721</PackageSize>
+        <PackageHash>95386709546eb457e1c8714b0142cb83fe110e93</PackageHash>
+        <InstallTarHash>f535951310d76acdf796b1f8c16de2f697e12dc4</InstallTarHash>
+        <PackageURI>o/osmo/osmo-0.4.4-9-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>osmo</Name>
+            <Homepage>http://osmo-pim.sourceforge.net/</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>opusfile</Name>
+        <Summary xml:lang="en">Library for opening, seeking, and decoding .opus files</Summary>
+        <Summary xml:lang="tr">Library for opening, seeking, and decoding .opus files</Summary>
+        <Description xml:lang="en">Library for opening, seeking, and decoding .opus files</Description>
+        <Description xml:lang="tr">Library for opening, seeking, and decoding .opus files</Description>
+        <IsA>library</IsA>
+        <PartOf>unknown</PartOf>
+        <License>BSD</License>
+        <RuntimeDependencies>
+            <Dependency>libogg</Dependency>
+            <Dependency>libopus</Dependency>
+            <Dependency>openssl</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="2">
+                <Date>2020-06-27</Date>
+                <Version>0.12</Version>
+                <Comment>Version bump</Comment>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2020-03-07</Date>
+                <Version>0.11</Version>
+                <Comment>First release</Comment>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>90015</InstalledSize>
+        <PackageSize>37739</PackageSize>
+        <PackageHash>412e5c65e0989eebe6c2ea42f937d71afbed5cc8</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>o/opusfile/opusfile-0.12-2-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>opusfile</Name>
+            <Homepage>https://opus-codec.org/</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>portaudio</Name>
+        <Summary xml:lang="en">Portable audio library</Summary>
+        <Summary xml:lang="tr">Ses kütüphanesi</Summary>
+        <Description xml:lang="fr">Une API audio multi-plateforme libre.</Description>
+        <Description xml:lang="en">PortAudio is a free, cross platform, open-source, audio I/O library.</Description>
+        <Description xml:lang="tr">Birden çok platformda kullanılabilinen açıkkodlu ses kütüphanesi</Description>
+        <IsA>library</IsA>
+        <PartOf>multimedia.sound</PartOf>
+        <License>as-is</License>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>jack-audio-connection-kit</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="6">
+                <Date>2020-03-22</Date>
+                <Version>190600.20161030</Version>
+                <Comment>Rebuild with cxx.</Comment>
+                <Name>Pisi Linux Community</Name>
+                <Email>admin@pisilinux.org</Email>
+            </Update>
+            <Update release="5">
+                <Date>2020-01-12</Date>
+                <Version>190600.20161030</Version>
+                <Comment>Rebuild</Comment>
+                <Name>Pisi Linux Community</Name>
+                <Email>admin@pisilinux.org</Email>
+            </Update>
+            <Update release="4">
+                <Date>2018-08-15</Date>
+                <Version>190600.20161030</Version>
+                <Comment>Rebuild</Comment>
+                <Name>Pisi Linux Community</Name>
+                <Email>admin@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2017-02-18</Date>
+                <Version>190600.20161030</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Pisi Linux Community</Name>
+                <Email>admin@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2016-06-09</Date>
+                <Version>19.20140130</Version>
+                <Comment>Release Bump</Comment>
+                <Name>Pisi Linux Community</Name>
+                <Email>admin@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2015-11-21</Date>
+                <Version>19.20140130</Version>
+                <Comment>First release</Comment>
+                <Name>Alihan Öztürk</Name>
+                <Email>alihan@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>253347</InstalledSize>
+        <PackageSize>75689</PackageSize>
+        <PackageHash>821ad4e2ed78133986a9878415358201537d7245</PackageHash>
+        <InstallTarHash>22b241ec5a17de8e0802b74e276ab6e248e15d33</InstallTarHash>
+        <PackageURI>p/portaudio/portaudio-190600.20161030-6-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>portaudio</Name>
+            <Homepage>http://www.portaudio.com</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>python3-pyserial</Name>
+        <Summary xml:lang="en">This module encapsulates the access for the serial port.</Summary>
+        <Description xml:lang="en">This module encapsulates the access for the serial port. It provides backends for Python running on Windows, OSX, Linux, BSD (possibly any POSIX compliant system) and IronPython. The module named “serial” automatically selects the appropriate backend.</Description>
+        <IsA>library</IsA>
+        <PartOf>programming.language.python3</PartOf>
+        <License>BSD-3-Clause</License>
+        <RuntimeDependencies>
+            <Dependency>python3</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-12-13</Date>
+                <Version>3.4</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>333148</InstalledSize>
+        <PackageSize>56148</PackageSize>
+        <PackageHash>9e6dba0bf48f035bbab1acf0d8659eca4ad2d338</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>p/python3-pyserial/python3-pyserial-3.4-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>python3-pyserial</Name>
+            <Homepage>https://pyserial.readthedocs.io/en/latest/shortintro.html</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>poedit</Name>
+        <Summary xml:lang="en">A cross-platform translation editor.</Summary>
+        <Summary xml:lang="tr">Platform bağımsız gettext po düzenleyicisi</Summary>
+        <Description xml:lang="en">This program is a simple translation editor for PO and XLIFF files. It also serves as a GUI frontend to more GNU gettext utilities and catalogs editor/source code parser. It helps with translating applications into another language.</Description>
+        <Description xml:lang="tr">Poedit, GNU Gettext arayüzü ve katalog düzenleyicisi / kaynak kod ayrıştırıcısıdır. Uygulamaları başka dillere çevirmede yardımcı olur. Detaylı bilgi için GNU Gettext dökümantasyonu ya da wxWidgets wxLocale sınıf referanslarına göz atın.</Description>
+        <IsA>app:gui</IsA>
+        <PartOf>editor</PartOf>
+        <License>MIT</License>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>wxGTK3</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>lucene++</Dependency>
+            <Dependency>gtkspell3</Dependency>
+            <Dependency>wxGTK-common</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-12-04</Date>
+                <Version>2.4.2</Version>
+                <Comment>First release</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>6197027</InstalledSize>
+        <PackageSize>1309871</PackageSize>
+        <PackageHash>ac7f587103686fe426bac9be04e8acf5a53cbfb1</PackageHash>
+        <InstallTarHash>7c052835183749880b630b5e7c9685f63af425d4</InstallTarHash>
+        <PackageURI>p/poedit/poedit-2.4.2-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>poedit</Name>
+            <Homepage>https://poedit.net/</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>shine</Name>
+        <Summary xml:lang="en">Super fast fixed-point MP3 encoder</Summary>
+        <Description xml:lang="en">shine is a blazing fast mp3 encoding library implemented in fixed-point arithmetic. The library can thus be used to performe super fast mp3 encoding on architectures without a FPU, such as armel, etc</Description>
+        <IsA>library</IsA>
+        <PartOf>multimedia.sound</PartOf>
+        <License>GPL2</License>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-01-14</Date>
+                <Version>3.1.1</Version>
+                <Comment>First release.</Comment>
+                <Name>Idris Kalp</Name>
+                <Email>idriskalp@gmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>91179</InstalledSize>
+        <PackageSize>36310</PackageSize>
+        <PackageHash>79d38ae5ece58371d718171cf3f76aafdf5296e6</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>s/shine/shine-3.1.1-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>shine</Name>
+            <Homepage>https://github.com/toots/shine</Homepage>
+            <Packager>
+                <Name>Mathias Freire</Name>
+                <Email>mathiasfreire45@gmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>wxGTK-common</Name>
+        <Summary xml:lang="en">GTK+ version of wxWidgets, a cross-platform C++ GUI toolkit</Summary>
+        <Summary xml:lang="tr">Birçok platform için ortak C++ arayüz araç takımı olan wxWindows&apos;un GTK+ sürümü</Summary>
+        <Description xml:lang="fr">wxWidgets/GTK2 est le port GTK2 de la librairie graphique multi-plateforme wxWidgets, offrant des classes pour les contrôles IHM communs ainsi qu&apos;un ensemble complet de classes d&apos;aides pour les tâches applicatives habituelles, allant du réseau à l&apos;affichage HTML en passant par la manipulation d&apos;images.</Description>
+        <Description xml:lang="en">wxWidgets/GTK2 is the GTK2 port of the C++ cross-platform wxWidgets GUI library, offering classes for all common GUI controls as well as a comprehensive set of helper classes for most common application tasks, ranging from networking to HTML display and image manipulation.</Description>
+        <Description xml:lang="tr">wxWidgets/GTK2 birçok platform için ortak bir C++ arayüz kitaplığı olan wxWidgets&apos;ın GTK2 sürümüdür. Ağ araçları, HTML gösterimi ve resim işleme gibi en yaygın kullanılan uygulama görevleri için kapsamlı bir sınıf kümesinin yanında tüm genel GUI denetimlerini içerir.</Description>
+        <Description xml:lang="es">wxWidgets/GTK2 es la versión portada a GTK2 de la librería GUI wxWidgets cross-plataforma en C++, con clases para todos los controles GUI comunes y tambien un conjunto de clases con ayudantes para la mayoría de las tareas comunes de aplicaciones, desde networking a visualización HTML y manipulación de imagenes.</Description>
+        <IsA>library</IsA>
+        <PartOf>desktop.toolkit</PartOf>
+        <License>wxWinLL-3</License>
+        <License>GPLv2</License>
+        <License>LGPLv2</License>
+        <License>wxWinFDL-3</License>
+        <RuntimeDependencies>
+            <Dependency>zlib</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="7">
+                <Date>2020-01-28</Date>
+                <Version>3.0.4</Version>
+                <Comment>Rebuild.</Comment>
+                <Name>Mustafa Cinasal</Name>
+                <Email>muscnsl@gmail.com</Email>
+            </Update>
+            <Update release="6">
+                <Date>2018-08-12</Date>
+                <Version>3.0.4</Version>
+                <Comment>Rebuild.</Comment>
+                <Name>Mustafa Cinasal</Name>
+                <Email>muscnsl@gmail.com</Email>
+            </Update>
+            <Update release="5">
+                <Date>2018-04-08</Date>
+                <Version>3.0.4</Version>
+                <Comment>Version bump</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="4">
+                <Date>2018-02-20</Date>
+                <Version>3.0.3.1</Version>
+                <Comment>Release Bump</Comment>
+                <Name>Mustafa Cinasal</Name>
+                <Email>admin@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2017-04-09</Date>
+                <Version>3.0.2</Version>
+                <Comment>Release Bump</Comment>
+                <Name>Kamil Atlı</Name>
+                <Email>admin@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2016-06-09</Date>
+                <Version>3.0.2</Version>
+                <Comment>Release Bump</Comment>
+                <Name>Pisi Linux Community</Name>
+                <Email>admin@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2016-02-23</Date>
+                <Version>3.0.2</Version>
+                <Comment>First release</Comment>
+                <Name>İbrahim KARAGÜZEL</Name>
+                <Email>ibrahimkaraguzel@windowslive.com</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>5619798</InstalledSize>
+        <PackageSize>1340348</PackageSize>
+        <PackageHash>dc15dfd6ec0390a4c209230d82d15fc1514c9a48</PackageHash>
+        <InstallTarHash>6a577ffe5c2127755a862717534e5c52a0551d0d</InstallTarHash>
+        <PackageURI>w/wxgtk-common/wxGTK-common-3.0.4-7-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>wxGTK</Name>
+            <Homepage>http://www.wxwidgets.org/</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>wxGTK3</Name>
+        <Summary xml:lang="en">GTK+ version of wxWidgets, a cross-platform C++ GUI toolkit</Summary>
+        <Summary xml:lang="tr">Birçok platform için ortak C++ arayüz araç takımı olan wxWindows&apos;un GTK+ sürümü</Summary>
+        <Description xml:lang="fr">wxWidgets/GTK2 est le port GTK2 de la librairie graphique multi-plateforme wxWidgets, offrant des classes pour les contrôles IHM communs ainsi qu&apos;un ensemble complet de classes d&apos;aides pour les tâches applicatives habituelles, allant du réseau à l&apos;affichage HTML en passant par la manipulation d&apos;images.</Description>
+        <Description xml:lang="en">wxWidgets/GTK2 is the GTK2 port of the C++ cross-platform wxWidgets GUI library, offering classes for all common GUI controls as well as a comprehensive set of helper classes for most common application tasks, ranging from networking to HTML display and image manipulation.</Description>
+        <Description xml:lang="tr">wxWidgets/GTK2 birçok platform için ortak bir C++ arayüz kitaplığı olan wxWidgets&apos;ın GTK2 sürümüdür. Ağ araçları, HTML gösterimi ve resim işleme gibi en yaygın kullanılan uygulama görevleri için kapsamlı bir sınıf kümesinin yanında tüm genel GUI denetimlerini içerir.</Description>
+        <Description xml:lang="es">wxWidgets/GTK2 es la versión portada a GTK2 de la librería GUI wxWidgets cross-plataforma en C++, con clases para todos los controles GUI comunes y tambien un conjunto de clases con ayudantes para la mayoría de las tareas comunes de aplicaciones, desde networking a visualización HTML y manipulación de imagenes.</Description>
+        <IsA>library</IsA>
+        <PartOf>desktop.toolkit</PartOf>
+        <License>wxWinLL-3</License>
+        <License>GPLv2</License>
+        <License>LGPLv2</License>
+        <License>wxWinFDL-3</License>
+        <RuntimeDependencies>
+            <Dependency release="7">wxGTK-common</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>libsdl2</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXxf86vm</Dependency>
+            <Dependency>webkit2gtk</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="7">
+                <Date>2020-01-28</Date>
+                <Version>3.0.4</Version>
+                <Comment>Rebuild.</Comment>
+                <Name>Mustafa Cinasal</Name>
+                <Email>muscnsl@gmail.com</Email>
+            </Update>
+            <Update release="6">
+                <Date>2018-08-12</Date>
+                <Version>3.0.4</Version>
+                <Comment>Rebuild.</Comment>
+                <Name>Mustafa Cinasal</Name>
+                <Email>muscnsl@gmail.com</Email>
+            </Update>
+            <Update release="5">
+                <Date>2018-04-08</Date>
+                <Version>3.0.4</Version>
+                <Comment>Version bump</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="4">
+                <Date>2018-02-20</Date>
+                <Version>3.0.3.1</Version>
+                <Comment>Release Bump</Comment>
+                <Name>Mustafa Cinasal</Name>
+                <Email>admin@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2017-04-09</Date>
+                <Version>3.0.2</Version>
+                <Comment>Release Bump</Comment>
+                <Name>Kamil Atlı</Name>
+                <Email>admin@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2016-06-09</Date>
+                <Version>3.0.2</Version>
+                <Comment>Release Bump</Comment>
+                <Name>Pisi Linux Community</Name>
+                <Email>admin@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2016-02-23</Date>
+                <Version>3.0.2</Version>
+                <Comment>First release</Comment>
+                <Name>İbrahim KARAGÜZEL</Name>
+                <Email>ibrahimkaraguzel@windowslive.com</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>15578509</InstalledSize>
+        <PackageSize>3777921</PackageSize>
+        <PackageHash>2a10b948e8f2ff03fc4a541dd629bef513c35833</PackageHash>
+        <InstallTarHash>998a8740032dfd5b26d925d211c7abed0f8cf1f9</InstallTarHash>
+        <PackageURI>w/wxgtk3/wxGTK3-3.0.4-7-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>wxGTK</Name>
+            <Homepage>http://www.wxwidgets.org/</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>xournalpp</Name>
+        <Summary xml:lang="en">Xournal++ is a handwriting notetaking software with PDF annotation support.</Summary>
+        <Description xml:lang="en">Xournal++ is a handwriting notetaking software with PDF annotation support. Written in C++ with GTK3, supporting Linux, macOS and Windows 10. Supports pen input from devices such as Wacom Tablets.</Description>
+        <IsA>app:gui</IsA>
+        <PartOf>office.misc</PartOf>
+        <License>GPLv2</License>
+        <RuntimeDependencies>
+            <Dependency>lua</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libzip</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>portaudio</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libsndfile</Dependency>
+            <Dependency>poppler-glib</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2021-01-03</Date>
+                <Version>1.0.20</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>4413124</InstalledSize>
+        <PackageSize>1038092</PackageSize>
+        <PackageHash>db72b27b1404acd5ffb463ca2bad2b8018aa76fd</PackageHash>
+        <InstallTarHash>f908d5cc4c2616a57e783bdb6625bf431eada69c</InstallTarHash>
+        <PackageURI>x/xournalpp/xournalpp-1.0.20-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>xournalpp</Name>
+            <Homepage>https://github.com/xournalpp/xournalpp</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>xfsdump</Name>
+        <Summary xml:lang="en">XFS dump/restore utilities</Summary>
+        <Summary xml:lang="tr">XFS döküm ve geri yükleme araçları</Summary>
+        <Description xml:lang="en">xfsdump contains XFS filesystem dump and restore utilities.</Description>
+        <Description xml:lang="tr">xfsdump, XFS dosya sistemi döküm (dump) ve geri yükleme (restore) araçlarını içerir.</Description>
+        <IsA>app:console</IsA>
+        <PartOf>unknown</PartOf>
+        <License>LGPLv2.1</License>
+        <RuntimeDependencies>
+            <Dependency>gcc</Dependency>
+            <Dependency>attr</Dependency>
+            <Dependency>gawk</Dependency>
+            <Dependency>dmapi</Dependency>
+            <Dependency>uuidd</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>libtool</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>xfsprogs</Dependency>
+            <Dependency>libutil-linux</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="3">
+                <Date>2021-01-12</Date>
+                <Version>3.1.9</Version>
+                <Comment>Version bump.</Comment>
+                <Name>AYDIN ATMACA</Name>
+                <Email>aydinatmaca@gmail.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-11-02</Date>
+                <Version>3.1.3</Version>
+                <Comment>Version bump</Comment>
+                <Name>Burak Fazıl Ertürk</Name>
+                <Email>burakerturk@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2012-11-14</Date>
+                <Version>3.1.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>901014</InstalledSize>
+        <PackageSize>248176</PackageSize>
+        <PackageHash>a0985e198d10e53fdd341f4c1c3bd4a372fb82a0</PackageHash>
+        <InstallTarHash>ca3d49821577a9d023f6b7b4761065df5ef286f9</InstallTarHash>
+        <PackageURI>x/xfsdump/xfsdump-3.1.9-3-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>xfsdump</Name>
+            <Homepage>https://git.kernel.org/pub/scm/fs/xfs/xfsdump-dev.git/</Homepage>
+            <Packager>
+                <Name>AYDIN ATMACA</Name>
+                <Email>aydinatmaca@gmail</Email>
+            </Packager>
+        </Source>
+    </Package>
+</PISI>
