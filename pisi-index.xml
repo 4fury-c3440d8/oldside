@@ -813,6 +813,51 @@
         </Source>
     </Package>
     <Package>
+        <Name>gphoto2</Name>
+        <Summary xml:lang="en">Digital camera software.</Summary>
+        <Description xml:lang="en">gPhoto2 is a free, redistributable, ready to use set of digital camera software applications for Unix-like systems, written by a whole team of dedicated volunteers around the world. It supports more than 2500 cameras.</Description>
+        <IsA>app:console</IsA>
+        <PartOf>multimedia.misc</PartOf>
+        <License>GPLv2</License>
+        <RuntimeDependencies>
+            <Dependency>cdk</Dependency>
+            <Dependency>popt</Dependency>
+            <Dependency>aalib</Dependency>
+            <Dependency>libexif</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>readline</Dependency>
+            <Dependency>libgphoto2</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-03-24</Date>
+                <Version>2.5.23</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>905599</InstalledSize>
+        <PackageSize>182362</PackageSize>
+        <PackageHash>e676d15cd318aba707bc9fc753f3d5c2618f6f99</PackageHash>
+        <InstallTarHash>0149edd699de02ffe1817927674a5b47133bca91</InstallTarHash>
+        <PackageURI>g/gphoto2/gphoto2-2.5.23-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>gphoto2</Name>
+            <Homepage>http://www.gphoto.org/</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
         <Name>gromit-mpx</Name>
         <Summary xml:lang="en">Gromit-MPX is a multi-pointer GTK3 port of the original Gromit desktop annotation tool.</Summary>
         <Description xml:lang="en">It enables graphical annotations with several pointers at once and is A LOT faster than its predecessor since it uses the XCOMPOSITE extension where available.</Description>
@@ -899,51 +944,6 @@
             <Packager>
                 <Name>PisiLinux Community</Name>
                 <Email>admins@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>gphoto2</Name>
-        <Summary xml:lang="en">Digital camera software.</Summary>
-        <Description xml:lang="en">gPhoto2 is a free, redistributable, ready to use set of digital camera software applications for Unix-like systems, written by a whole team of dedicated volunteers around the world. It supports more than 2500 cameras.</Description>
-        <IsA>app:console</IsA>
-        <PartOf>multimedia.misc</PartOf>
-        <License>GPLv2</License>
-        <RuntimeDependencies>
-            <Dependency>cdk</Dependency>
-            <Dependency>popt</Dependency>
-            <Dependency>aalib</Dependency>
-            <Dependency>libexif</Dependency>
-            <Dependency>ncurses</Dependency>
-            <Dependency>readline</Dependency>
-            <Dependency>libgphoto2</Dependency>
-            <Dependency>libjpeg-turbo</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="1">
-                <Date>2020-03-24</Date>
-                <Version>2.5.23</Version>
-                <Comment>First build.</Comment>
-                <Name>fury</Name>
-                <Email>wascheme@tuta.io</Email>
-            </Update>
-        </History>
-        <BuildHost>farm_yerel</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>2.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>905599</InstalledSize>
-        <PackageSize>182362</PackageSize>
-        <PackageHash>e676d15cd318aba707bc9fc753f3d5c2618f6f99</PackageHash>
-        <InstallTarHash>0149edd699de02ffe1817927674a5b47133bca91</InstallTarHash>
-        <PackageURI>g/gphoto2/gphoto2-2.5.23-1-p2-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>gphoto2</Name>
-            <Homepage>http://www.gphoto.org/</Homepage>
-            <Packager>
-                <Name>fury</Name>
-                <Email>wascheme@tuta.io</Email>
             </Packager>
         </Source>
     </Package>
@@ -1599,6 +1599,44 @@
         </Source>
     </Package>
     <Package>
+        <Name>libsocket</Name>
+        <Summary xml:lang="en">libsocket is a library written in C for the purpose of simplifying the usage of AF_INET/AF_INET6 (internet domain) and AF_UNIX (unix domain) sockets.</Summary>
+        <Description xml:lang="en">libsocket is a library written in C for the purpose of simplifying the usage of AF_INET/AF_INET6 (internet domain) and AF_UNIX (unix domain) sockets. libsocket++ is an object-oriented wrapper around libsocket.</Description>
+        <IsA>library</IsA>
+        <PartOf>system.misc</PartOf>
+        <License>BSD</License>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-12-22</Date>
+                <Version>2.5.0</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>141578</InstalledSize>
+        <PackageSize>38316</PackageSize>
+        <PackageHash>b636f247276433c9aed6467fdad5c86481ab5605</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>libs/libsocket/libsocket-2.5.0-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libsocket</Name>
+            <Homepage>https://github.com/dermesser/libsocket</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
         <Name>libsoxr</Name>
         <Summary xml:lang="en">The SoX Resampler library that aims to give fast and high quality results for any constant resampling ratio</Summary>
         <Description xml:lang="en">The SoX Resampler library that aims to give fast and high quality results for any constant resampling ratio</Description>
@@ -1634,44 +1672,6 @@
             <Packager>
                 <Name>Mathias Freire</Name>
                 <Email>mathiasfreire45@gmail.com</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>libsocket</Name>
-        <Summary xml:lang="en">libsocket is a library written in C for the purpose of simplifying the usage of AF_INET/AF_INET6 (internet domain) and AF_UNIX (unix domain) sockets.</Summary>
-        <Description xml:lang="en">libsocket is a library written in C for the purpose of simplifying the usage of AF_INET/AF_INET6 (internet domain) and AF_UNIX (unix domain) sockets. libsocket++ is an object-oriented wrapper around libsocket.</Description>
-        <IsA>library</IsA>
-        <PartOf>system.misc</PartOf>
-        <License>BSD</License>
-        <RuntimeDependencies>
-            <Dependency>libgcc</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="1">
-                <Date>2020-12-22</Date>
-                <Version>2.5.0</Version>
-                <Comment>First build.</Comment>
-                <Name>fury</Name>
-                <Email>wascheme@tuta.io</Email>
-            </Update>
-        </History>
-        <BuildHost>farm_yerel</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>2.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>141578</InstalledSize>
-        <PackageSize>38316</PackageSize>
-        <PackageHash>b636f247276433c9aed6467fdad5c86481ab5605</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>libs/libsocket/libsocket-2.5.0-1-p2-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>libsocket</Name>
-            <Homepage>https://github.com/dermesser/libsocket</Homepage>
-            <Packager>
-                <Name>fury</Name>
-                <Email>wascheme@tuta.io</Email>
             </Packager>
         </Source>
     </Package>
@@ -2052,55 +2052,6 @@
         </Source>
     </Package>
     <Package>
-        <Name>opusfile</Name>
-        <Summary xml:lang="en">Library for opening, seeking, and decoding .opus files</Summary>
-        <Summary xml:lang="tr">Library for opening, seeking, and decoding .opus files</Summary>
-        <Description xml:lang="en">Library for opening, seeking, and decoding .opus files</Description>
-        <Description xml:lang="tr">Library for opening, seeking, and decoding .opus files</Description>
-        <IsA>library</IsA>
-        <PartOf>unknown</PartOf>
-        <License>BSD</License>
-        <RuntimeDependencies>
-            <Dependency>libogg</Dependency>
-            <Dependency>libopus</Dependency>
-            <Dependency>openssl</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="2">
-                <Date>2020-06-27</Date>
-                <Version>0.12</Version>
-                <Comment>Version bump</Comment>
-                <Name>PisiLinux Community</Name>
-                <Email>admins@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2020-03-07</Date>
-                <Version>0.11</Version>
-                <Comment>First release</Comment>
-                <Name>PisiLinux Community</Name>
-                <Email>admins@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>farm_yerel</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>2.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>90015</InstalledSize>
-        <PackageSize>37739</PackageSize>
-        <PackageHash>412e5c65e0989eebe6c2ea42f937d71afbed5cc8</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>o/opusfile/opusfile-0.12-2-p2-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>opusfile</Name>
-            <Homepage>https://opus-codec.org/</Homepage>
-            <Packager>
-                <Name>PisiLinux Community</Name>
-                <Email>admins@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
         <Name>osmo</Name>
         <Summary xml:lang="en">Osmo is a handy personal organizer, which includes calendar, tasks manager, address book and notes modules.</Summary>
         <Description xml:lang="en">Osmo is a handy personal organizer, which includes calendar, tasks manager, address book and notes modules. It was designed to be a small, easy to use and good looking PIM tool to help to manage personal information. In its current state the organizer is quite convenient to use - for example, the user can perform nearly all operations using the keyboard. Also, a lot of parameters are configurable to meet the user&apos;s preferences. On the technical side, Osmo is GTK+ based tool which uses a plain XML database to store all personal data.</Description>
@@ -2201,6 +2152,163 @@
             <Packager>
                 <Name>PisiLinux Community</Name>
                 <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>opusfile</Name>
+        <Summary xml:lang="en">Library for opening, seeking, and decoding .opus files</Summary>
+        <Summary xml:lang="tr">Library for opening, seeking, and decoding .opus files</Summary>
+        <Description xml:lang="en">Library for opening, seeking, and decoding .opus files</Description>
+        <Description xml:lang="tr">Library for opening, seeking, and decoding .opus files</Description>
+        <IsA>library</IsA>
+        <PartOf>unknown</PartOf>
+        <License>BSD</License>
+        <RuntimeDependencies>
+            <Dependency>libogg</Dependency>
+            <Dependency>libopus</Dependency>
+            <Dependency>openssl</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="2">
+                <Date>2020-06-27</Date>
+                <Version>0.12</Version>
+                <Comment>Version bump</Comment>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2020-03-07</Date>
+                <Version>0.11</Version>
+                <Comment>First release</Comment>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>90015</InstalledSize>
+        <PackageSize>37739</PackageSize>
+        <PackageHash>412e5c65e0989eebe6c2ea42f937d71afbed5cc8</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>o/opusfile/opusfile-0.12-2-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>opusfile</Name>
+            <Homepage>https://opus-codec.org/</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>opera-stable</Name>
+        <Summary xml:lang="en">Opera Web Browser</Summary>
+        <Description xml:lang="en">Opera Web Browser</Description>
+        <PartOf>unknown</PartOf>
+        <License>EULA</License>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>at-spi2-atk</Dependency>
+            <Dependency>at-spi2-core</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>gsettings-desktop-schemas</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2022-03-16</Date>
+                <Version>84.0.4316.31</Version>
+                <Comment>Opera version bump.</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@gmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>247859214</InstalledSize>
+        <PackageSize>81729758</PackageSize>
+        <PackageHash>e95d6586e1842dff20d5872f2c5a4fbfb9b2d703</PackageHash>
+        <InstallTarHash>b842a826487a105ae5d8409d7fa9a7e030802ac9</InstallTarHash>
+        <PackageURI>o/opera-stable/opera-stable-84.0.4316.31-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>opera</Name>
+            <Homepage>https://www.opera.com/</Homepage>
+            <Packager>
+                <Name>Pisilinux Community</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>python3-pyserial</Name>
+        <Summary xml:lang="en">This module encapsulates the access for the serial port.</Summary>
+        <Description xml:lang="en">This module encapsulates the access for the serial port. It provides backends for Python running on Windows, OSX, Linux, BSD (possibly any POSIX compliant system) and IronPython. The module named “serial” automatically selects the appropriate backend.</Description>
+        <IsA>library</IsA>
+        <PartOf>programming.language.python3</PartOf>
+        <License>BSD-3-Clause</License>
+        <RuntimeDependencies>
+            <Dependency>python3</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-12-13</Date>
+                <Version>3.4</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>333148</InstalledSize>
+        <PackageSize>56148</PackageSize>
+        <PackageHash>9e6dba0bf48f035bbab1acf0d8659eca4ad2d338</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>p/python3-pyserial/python3-pyserial-3.4-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>python3-pyserial</Name>
+            <Homepage>https://pyserial.readthedocs.io/en/latest/shortintro.html</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
             </Packager>
         </Source>
     </Package>
@@ -2328,44 +2436,6 @@
             <Packager>
                 <Name>PisiLinux Community</Name>
                 <Email>admins@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>python3-pyserial</Name>
-        <Summary xml:lang="en">This module encapsulates the access for the serial port.</Summary>
-        <Description xml:lang="en">This module encapsulates the access for the serial port. It provides backends for Python running on Windows, OSX, Linux, BSD (possibly any POSIX compliant system) and IronPython. The module named “serial” automatically selects the appropriate backend.</Description>
-        <IsA>library</IsA>
-        <PartOf>programming.language.python3</PartOf>
-        <License>BSD-3-Clause</License>
-        <RuntimeDependencies>
-            <Dependency>python3</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="1">
-                <Date>2020-12-13</Date>
-                <Version>3.4</Version>
-                <Comment>First build.</Comment>
-                <Name>fury</Name>
-                <Email>wascheme@tuta.io</Email>
-            </Update>
-        </History>
-        <BuildHost>farm_yerel</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>2.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>333148</InstalledSize>
-        <PackageSize>56148</PackageSize>
-        <PackageHash>9e6dba0bf48f035bbab1acf0d8659eca4ad2d338</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>p/python3-pyserial/python3-pyserial-3.4-1-p2-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>python3-pyserial</Name>
-            <Homepage>https://pyserial.readthedocs.io/en/latest/shortintro.html</Homepage>
-            <Packager>
-                <Name>fury</Name>
-                <Email>wascheme@tuta.io</Email>
             </Packager>
         </Source>
     </Package>
