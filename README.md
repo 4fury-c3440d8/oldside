@@ -12,11 +12,12 @@ A some new applications for everyday usage in lightweight GTK-based desktop envi
 - **ario**: mpd client with gtk+ ui.
 - **ncmpcpp**: mpd client.
 - **osmo**: calendar.
+- **opera**: web-browser.
 - **poedit**: translations editor.
 - **xournalpp**: handwriting notetaking tool.
 
 For add repo in your system run:
 
 ```
-sudo pisi add-repo oldside https://github.com/4fury-c3440d8/lightweight_coma/raw/main/pisi-index.xml.xz
+sudo pisi ar oldside https://github.com/4fury-c3440d8/oldside/raw/master/pisi-index.xml.xz
 ```
