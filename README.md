@@ -15,6 +15,8 @@ A some new applications for everyday usage in lightweight GTK-based desktop envi
 - **opera**: web-browser.
 - **poedit**: translations editor.
 - **xournalpp**: handwriting notetaking tool.
+- **qtox**: A Qt5 based graphical tox client.
+- **picom**: Lightweight X compositor.
 
 For add repo in your system run:
 
