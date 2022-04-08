@@ -101,7 +101,7 @@
         <Description xml:lang="en">Claws Mail is a lightweight and highly configurable email client and news reader based on the GTK+ GUI toolkit.</Description>
         <IsA>app:gui</IsA>
         <PartOf>network.mail</PartOf>
-        <License>GPLv3</License>
+        <License>GPL-3</License>
         <RuntimeDependencies>
             <Dependency>db</Dependency>
             <Dependency>atk</Dependency>
@@ -116,12 +116,14 @@
             <Dependency>libSM</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>gnutls</Dependency>
+            <Dependency>libgcc</Dependency>
             <Dependency>libICE</Dependency>
             <Dependency>nettle</Dependency>
             <Dependency>libical</Dependency>
             <Dependency>librsvg</Dependency>
             <Dependency>openssl</Dependency>
             <Dependency>python3</Dependency>
+            <Dependency>freetype</Dependency>
             <Dependency>compface</Dependency>
             <Dependency>enchant2</Dependency>
             <Dependency>harfbuzz</Dependency>
@@ -131,14 +133,16 @@
             <Dependency>libnotify</Dependency>
             <Dependency>cyrus-sasl</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>fontconfig</Dependency>
             <Dependency>libarchive</Dependency>
             <Dependency>libgpg-error</Dependency>
+            <Dependency>openldap-client</Dependency>
             <Dependency>startup-notification</Dependency>
         </RuntimeDependencies>
         <History>
             <Update release="2">
-                <Date>2021-08-09</Date>
-                <Version>4.0.0</Version>
+                <Date>2022-04-08</Date>
+                <Version>4.1.0</Version>
                 <Comment>First build.</Comment>
                 <Name>fury</Name>
                 <Email>uglyside@yandex.ru</Email>
@@ -148,15 +152,15 @@
         <Distribution>PisiLinux</Distribution>
         <DistributionRelease>2.0</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>13996025</InstalledSize>
-        <PackageSize>2861662</PackageSize>
-        <PackageHash>79f9f99a310591b7aec2a09ad93bd1aad8da258e</PackageHash>
-        <InstallTarHash>be07f7c15057320164c2879621c2eca1aa800d5f</InstallTarHash>
-        <PackageURI>c/claws-mail/claws-mail-4.0.0-2-p2-x86_64.pisi</PackageURI>
+        <InstalledSize>14006753</InstalledSize>
+        <PackageSize>2898953</PackageSize>
+        <PackageHash>5a028386fa85557e0ea1ad55a9c17ab8265c314c</PackageHash>
+        <InstallTarHash>0bcfb1487a08428727fa6d824f30d75a82c7e445</InstallTarHash>
+        <PackageURI>c/claws-mail/claws-mail-4.1.0-2-p2-x86_64.pisi</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>claws-mail</Name>
-            <Homepage>https://www.claws-mail.org/</Homepage>
+            <Homepage>https://claws-mail.org/</Homepage>
             <Packager>
                 <Name>fury</Name>
                 <Email>uglyside@yandex.ru</Email>
@@ -867,51 +871,6 @@
         </Source>
     </Package>
     <Package>
-        <Name>gphoto2</Name>
-        <Summary xml:lang="en">Digital camera software.</Summary>
-        <Description xml:lang="en">gPhoto2 is a free, redistributable, ready to use set of digital camera software applications for Unix-like systems, written by a whole team of dedicated volunteers around the world. It supports more than 2500 cameras.</Description>
-        <IsA>app:console</IsA>
-        <PartOf>multimedia.misc</PartOf>
-        <License>GPLv2</License>
-        <RuntimeDependencies>
-            <Dependency>cdk</Dependency>
-            <Dependency>popt</Dependency>
-            <Dependency>aalib</Dependency>
-            <Dependency>libexif</Dependency>
-            <Dependency>ncurses</Dependency>
-            <Dependency>readline</Dependency>
-            <Dependency>libgphoto2</Dependency>
-            <Dependency>libjpeg-turbo</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="1">
-                <Date>2020-03-24</Date>
-                <Version>2.5.23</Version>
-                <Comment>First build.</Comment>
-                <Name>fury</Name>
-                <Email>wascheme@tuta.io</Email>
-            </Update>
-        </History>
-        <BuildHost>farm_yerel</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>2.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>905599</InstalledSize>
-        <PackageSize>182362</PackageSize>
-        <PackageHash>e676d15cd318aba707bc9fc753f3d5c2618f6f99</PackageHash>
-        <InstallTarHash>0149edd699de02ffe1817927674a5b47133bca91</InstallTarHash>
-        <PackageURI>g/gphoto2/gphoto2-2.5.23-1-p2-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>gphoto2</Name>
-            <Homepage>http://www.gphoto.org/</Homepage>
-            <Packager>
-                <Name>fury</Name>
-                <Email>wascheme@tuta.io</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
         <Name>gpsd</Name>
         <Summary xml:lang="en">GPS daemon and library to support serial/USB GPS devices.</Summary>
         <Description xml:lang="en">gpsd is a service daemon that monitor one or more GPSes attached to a host computer through serial or USB ports, making all data of the sensors available to be queried on TCP port 2947 of the host computer.</Description>
@@ -963,6 +922,51 @@
             <Packager>
                 <Name>PisiLinux Community</Name>
                 <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>gphoto2</Name>
+        <Summary xml:lang="en">Digital camera software.</Summary>
+        <Description xml:lang="en">gPhoto2 is a free, redistributable, ready to use set of digital camera software applications for Unix-like systems, written by a whole team of dedicated volunteers around the world. It supports more than 2500 cameras.</Description>
+        <IsA>app:console</IsA>
+        <PartOf>multimedia.misc</PartOf>
+        <License>GPLv2</License>
+        <RuntimeDependencies>
+            <Dependency>cdk</Dependency>
+            <Dependency>popt</Dependency>
+            <Dependency>aalib</Dependency>
+            <Dependency>libexif</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>readline</Dependency>
+            <Dependency>libgphoto2</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-03-24</Date>
+                <Version>2.5.23</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>905599</InstalledSize>
+        <PackageSize>182362</PackageSize>
+        <PackageHash>e676d15cd318aba707bc9fc753f3d5c2618f6f99</PackageHash>
+        <InstallTarHash>0149edd699de02ffe1817927674a5b47133bca91</InstallTarHash>
+        <PackageURI>g/gphoto2/gphoto2-2.5.23-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>gphoto2</Name>
+            <Homepage>http://www.gphoto.org/</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
             </Packager>
         </Source>
     </Package>
@@ -1147,88 +1151,6 @@
             <Packager>
                 <Name>fury</Name>
                 <Email>wascheme@tuta.io</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>libconfig</Name>
-        <Summary xml:lang="en">C/C++ library for processing configuration files.</Summary>
-        <Summary xml:lang="tr">C/C++ Yapılandırma Dosyası Kitaplığı</Summary>
-        <Description xml:lang="en">Libconfig is a simple library for manipulating structured configuration files. The file format is more compact and more readable than XML. And unlike XML, it is type-aware, so it is not necessary to do string parsing in application code.</Description>
-        <Description xml:lang="tr">Libconfig, yapılandırma dosyalarını düzenlemek için basit bir kitaplıktır. Dosya biçimi XML&apos;den daha basit ve okunabilirdir. XML&apos;den farklı olarak tip bilgisi de tutulur. Böylece, uygulama kodlarında katar ayrıştırmaya gerek kalmaz.</Description>
-        <IsA>library</IsA>
-        <PartOf>programming.library</PartOf>
-        <License>LGPL-2.1</License>
-        <RuntimeDependencies>
-            <Dependency>libgcc</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="7">
-                <Date>2022-04-06</Date>
-                <Version>1.7.3</Version>
-                <Comment>Version bump.</Comment>
-                <Name>Pisilinux Community</Name>
-                <Email>admins@pisilinux.org</Email>
-            </Update>
-            <Update release="6">
-                <Date>2020-11-07</Date>
-                <Version>1.7.2</Version>
-                <Comment>Rebuild</Comment>
-                <Name>Pisi Linux Community</Name>
-                <Email>admin@pisilinux.org</Email>
-            </Update>
-            <Update release="5">
-                <Date>2020-01-12</Date>
-                <Version>1.7.2</Version>
-                <Comment>Rebuild</Comment>
-                <Name>Pisi Linux Community</Name>
-                <Email>admin@pisilinux.org</Email>
-            </Update>
-            <Update release="4">
-                <Date>2018-08-03</Date>
-                <Version>1.5</Version>
-                <Comment>Rebuild</Comment>
-                <Name>Pisi Linux Community</Name>
-                <Email>admin@pisilinux.org</Email>
-            </Update>
-            <Update release="3">
-                <Date>2017-02-17</Date>
-                <Version>1.5</Version>
-                <Comment>Rebuild</Comment>
-                <Name>Pisi Linux Community</Name>
-                <Email>admin@pisilinux.org</Email>
-            </Update>
-            <Update release="2">
-                <Date>2016-06-09</Date>
-                <Version>1.5</Version>
-                <Comment>Version Bump</Comment>
-                <Name>Pisi Linux Community</Name>
-                <Email>admin@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2013-03-04</Date>
-                <Version>1.4.9</Version>
-                <Comment>First release</Comment>
-                <Name>Marcin Bojara</Name>
-                <Email>marcin@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>farm_yerel</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>2.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>185141</InstalledSize>
-        <PackageSize>44985</PackageSize>
-        <PackageHash>d1f9ac9db45a66ea9d16162c3fde44756f99ecad</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>libc/libconfig/libconfig-1.7.3-7-p2-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>libconfig</Name>
-            <Homepage>https://hyperrealm.github.io/libconfig/</Homepage>
-            <Packager>
-                <Name>Pisilinux Community</Name>
-                <Email>admins@pisilinux.org</Email>
             </Packager>
         </Source>
     </Package>
@@ -2570,34 +2492,25 @@
         </Source>
     </Package>
     <Package>
-        <Name>portaudio</Name>
+        <Name>portaudio-cxx</Name>
         <Summary xml:lang="en">Portable audio library</Summary>
-        <Summary xml:lang="tr">Ses kütüphanesi</Summary>
-        <Description xml:lang="fr">Une API audio multi-plateforme libre.</Description>
         <Description xml:lang="en">PortAudio is a free, cross platform, open-source, audio I/O library.</Description>
-        <Description xml:lang="tr">Birden çok platformda kullanılabilinen açıkkodlu ses kütüphanesi</Description>
         <IsA>library</IsA>
-        <PartOf>multimedia.sound</PartOf>
+        <PartOf>unknown</PartOf>
         <License>as-is</License>
         <RuntimeDependencies>
             <Dependency>libgcc</Dependency>
             <Dependency>alsa-lib</Dependency>
+            <Dependency release="4">portaudio</Dependency>
             <Dependency>jack-audio-connection-kit</Dependency>
         </RuntimeDependencies>
         <History>
-            <Update release="6">
-                <Date>2020-03-22</Date>
+            <Update release="4">
+                <Date>2022-04-08</Date>
                 <Version>190600.20161030</Version>
                 <Comment>Rebuild with cxx.</Comment>
-                <Name>Pisi Linux Community</Name>
-                <Email>admin@pisilinux.org</Email>
-            </Update>
-            <Update release="5">
-                <Date>2020-01-12</Date>
-                <Version>190600.20161030</Version>
-                <Comment>Rebuild</Comment>
-                <Name>Pisi Linux Community</Name>
-                <Email>admin@pisilinux.org</Email>
+                <Name>Pisilinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
             </Update>
             <Update release="4">
                 <Date>2018-08-15</Date>
@@ -2632,11 +2545,11 @@
         <Distribution>PisiLinux</Distribution>
         <DistributionRelease>2.0</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>253347</InstalledSize>
-        <PackageSize>75689</PackageSize>
-        <PackageHash>821ad4e2ed78133986a9878415358201537d7245</PackageHash>
-        <InstallTarHash>22b241ec5a17de8e0802b74e276ab6e248e15d33</InstallTarHash>
-        <PackageURI>p/portaudio/portaudio-190600.20161030-6-p2-x86_64.pisi</PackageURI>
+        <InstalledSize>56442</InstalledSize>
+        <PackageSize>14859</PackageSize>
+        <PackageHash>699a6bcf1a0387b7886d8f178aad774d9b64d112</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>p/portaudio-cxx/portaudio-cxx-190600.20161030-4-p2-x86_64.pisi</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>portaudio</Name>
@@ -3203,10 +3116,11 @@
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libsndfile</Dependency>
             <Dependency>poppler-glib</Dependency>
+            <Dependency>portaudio-cxx</Dependency>
         </RuntimeDependencies>
         <History>
             <Update release="1">
-                <Date>2021-01-03</Date>
+                <Date>2022-04-08</Date>
                 <Version>1.0.20</Version>
                 <Comment>First build.</Comment>
                 <Name>fury</Name>
@@ -3218,9 +3132,9 @@
         <DistributionRelease>2.0</DistributionRelease>
         <Architecture>x86_64</Architecture>
         <InstalledSize>4413124</InstalledSize>
-        <PackageSize>1038092</PackageSize>
-        <PackageHash>db72b27b1404acd5ffb463ca2bad2b8018aa76fd</PackageHash>
-        <InstallTarHash>f908d5cc4c2616a57e783bdb6625bf431eada69c</InstallTarHash>
+        <PackageSize>1037633</PackageSize>
+        <PackageHash>6d6637c26a69dc020952f32144a7c7db2f217699</PackageHash>
+        <InstallTarHash>dcba7ef2a5282c53883b80c0a1254320c37151e3</InstallTarHash>
         <PackageURI>x/xournalpp/xournalpp-1.0.20-1-p2-x86_64.pisi</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
