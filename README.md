@@ -5,6 +5,7 @@ A some new applications for everyday usage in lightweight GTK-based desktop envi
 - **deadbeef**: new bugfix release.
 - **florb**: map viewer.
 - **geeqie**: image viewer and simple editor.
+- **viewnior**: image viewer.
 - **gparted**: partition editor.
 - **gpick**: palette editor and color picker.
 - **gromit-mpx**: on-screen annotation tool.
