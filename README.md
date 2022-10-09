@@ -2,6 +2,7 @@
 A some new applications for everyday usage in lightweight GTK-based desktop environments.
 
 - **claws-mail**: email client and rss reader.
+- **coolreader**: book reader.
 - **deadbeef**: new bugfix release.
 - **florb**: map viewer.
 - **geeqie**: image viewer and simple editor.
