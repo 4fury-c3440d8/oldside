@@ -444,6 +444,45 @@
         </Source>
     </Package>
     <Package>
+        <Name>f2fs-tools</Name>
+        <Summary xml:lang="en">Userland tools for the f2fs filesystem.</Summary>
+        <Description xml:lang="en">Tools for Flash-Friendly File System (F2FS).</Description>
+        <IsA>app:console</IsA>
+        <PartOf>hardware.disk</PartOf>
+        <License>GPLv2</License>
+        <License>LGPLv2.1</License>
+        <RuntimeDependencies>
+            <Dependency>libutil-linux</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2021-01-12</Date>
+                <Version>1.14.0</Version>
+                <Comment>First Beta build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>568894</InstalledSize>
+        <PackageSize>181741</PackageSize>
+        <PackageHash>ed34e30f8d989686339a0bfee3ea82901e464566</PackageHash>
+        <InstallTarHash>1ef86ca1f87e7974f7800222b676ed8f0a513654</InstallTarHash>
+        <PackageURI>f/f2fs-tools/f2fs-tools-1.14.0-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>f2fs-tools</Name>
+            <Homepage>https://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-tools.git/about/</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
         <Name>fbida</Name>
         <Summary xml:lang="en">The fbida project contains a few applications for viewing and editing images, with the main focus being photos.</Summary>
         <Description xml:lang="en">The fbida project contains a few applications for viewing and editing images, with the main focus being photos.</Description>
@@ -495,45 +534,6 @@
         <Source>
             <Name>fbida</Name>
             <Homepage>https://www.kraxel.org/blog/linux/fbida/</Homepage>
-            <Packager>
-                <Name>fury</Name>
-                <Email>wascheme@tuta.io</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>f2fs-tools</Name>
-        <Summary xml:lang="en">Userland tools for the f2fs filesystem.</Summary>
-        <Description xml:lang="en">Tools for Flash-Friendly File System (F2FS).</Description>
-        <IsA>app:console</IsA>
-        <PartOf>hardware.disk</PartOf>
-        <License>GPLv2</License>
-        <License>LGPLv2.1</License>
-        <RuntimeDependencies>
-            <Dependency>libutil-linux</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="1">
-                <Date>2021-01-12</Date>
-                <Version>1.14.0</Version>
-                <Comment>First Beta build.</Comment>
-                <Name>fury</Name>
-                <Email>wascheme@tuta.io</Email>
-            </Update>
-        </History>
-        <BuildHost>farm_yerel</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>2.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>568894</InstalledSize>
-        <PackageSize>181741</PackageSize>
-        <PackageHash>ed34e30f8d989686339a0bfee3ea82901e464566</PackageHash>
-        <InstallTarHash>1ef86ca1f87e7974f7800222b676ed8f0a513654</InstallTarHash>
-        <PackageURI>f/f2fs-tools/f2fs-tools-1.14.0-1-p2-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>f2fs-tools</Name>
-            <Homepage>https://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-tools.git/about/</Homepage>
             <Packager>
                 <Name>fury</Name>
                 <Email>wascheme@tuta.io</Email>
@@ -1680,44 +1680,6 @@
         </Source>
     </Package>
     <Package>
-        <Name>libsocket</Name>
-        <Summary xml:lang="en">libsocket is a library written in C for the purpose of simplifying the usage of AF_INET/AF_INET6 (internet domain) and AF_UNIX (unix domain) sockets.</Summary>
-        <Description xml:lang="en">libsocket is a library written in C for the purpose of simplifying the usage of AF_INET/AF_INET6 (internet domain) and AF_UNIX (unix domain) sockets. libsocket++ is an object-oriented wrapper around libsocket.</Description>
-        <IsA>library</IsA>
-        <PartOf>system.misc</PartOf>
-        <License>BSD</License>
-        <RuntimeDependencies>
-            <Dependency>libgcc</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="1">
-                <Date>2020-12-22</Date>
-                <Version>2.5.0</Version>
-                <Comment>First build.</Comment>
-                <Name>fury</Name>
-                <Email>wascheme@tuta.io</Email>
-            </Update>
-        </History>
-        <BuildHost>farm_yerel</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>2.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>141578</InstalledSize>
-        <PackageSize>38316</PackageSize>
-        <PackageHash>b636f247276433c9aed6467fdad5c86481ab5605</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>libs/libsocket/libsocket-2.5.0-1-p2-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>libsocket</Name>
-            <Homepage>https://github.com/dermesser/libsocket</Homepage>
-            <Packager>
-                <Name>fury</Name>
-                <Email>wascheme@tuta.io</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
         <Name>libsoxr</Name>
         <Summary xml:lang="en">The SoX Resampler library that aims to give fast and high quality results for any constant resampling ratio</Summary>
         <Description xml:lang="en">The SoX Resampler library that aims to give fast and high quality results for any constant resampling ratio</Description>
@@ -1753,6 +1715,44 @@
             <Packager>
                 <Name>Mathias Freire</Name>
                 <Email>mathiasfreire45@gmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libsocket</Name>
+        <Summary xml:lang="en">libsocket is a library written in C for the purpose of simplifying the usage of AF_INET/AF_INET6 (internet domain) and AF_UNIX (unix domain) sockets.</Summary>
+        <Description xml:lang="en">libsocket is a library written in C for the purpose of simplifying the usage of AF_INET/AF_INET6 (internet domain) and AF_UNIX (unix domain) sockets. libsocket++ is an object-oriented wrapper around libsocket.</Description>
+        <IsA>library</IsA>
+        <PartOf>system.misc</PartOf>
+        <License>BSD</License>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2020-12-22</Date>
+                <Version>2.5.0</Version>
+                <Comment>First build.</Comment>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>141578</InstalledSize>
+        <PackageSize>38316</PackageSize>
+        <PackageHash>b636f247276433c9aed6467fdad5c86481ab5605</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>libs/libsocket/libsocket-2.5.0-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libsocket</Name>
+            <Homepage>https://github.com/dermesser/libsocket</Homepage>
+            <Packager>
+                <Name>fury</Name>
+                <Email>wascheme@tuta.io</Email>
             </Packager>
         </Source>
     </Package>
@@ -2243,6 +2243,125 @@
         </Source>
     </Package>
     <Package>
+        <Name>opusfile</Name>
+        <Summary xml:lang="en">Library for opening, seeking, and decoding .opus files</Summary>
+        <Summary xml:lang="tr">Library for opening, seeking, and decoding .opus files</Summary>
+        <Description xml:lang="en">Library for opening, seeking, and decoding .opus files</Description>
+        <Description xml:lang="tr">Library for opening, seeking, and decoding .opus files</Description>
+        <IsA>library</IsA>
+        <PartOf>unknown</PartOf>
+        <License>BSD</License>
+        <RuntimeDependencies>
+            <Dependency>libogg</Dependency>
+            <Dependency>libopus</Dependency>
+            <Dependency>openssl</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="2">
+                <Date>2020-06-27</Date>
+                <Version>0.12</Version>
+                <Comment>Version bump</Comment>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2020-03-07</Date>
+                <Version>0.11</Version>
+                <Comment>First release</Comment>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>90015</InstalledSize>
+        <PackageSize>37739</PackageSize>
+        <PackageHash>412e5c65e0989eebe6c2ea42f937d71afbed5cc8</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>o/opusfile/opusfile-0.12-2-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>opusfile</Name>
+            <Homepage>https://opus-codec.org/</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>opera-stable</Name>
+        <Summary xml:lang="en">Opera Web Browser</Summary>
+        <Description xml:lang="en">Opera Web Browser</Description>
+        <PartOf>unknown</PartOf>
+        <License>EULA</License>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>at-spi2-atk</Dependency>
+            <Dependency>at-spi2-core</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>gsettings-desktop-schemas</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2022-03-16</Date>
+                <Version>84.0.4316.31</Version>
+                <Comment>Opera version bump.</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@gmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>farm_yerel</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>247859214</InstalledSize>
+        <PackageSize>81729758</PackageSize>
+        <PackageHash>e95d6586e1842dff20d5872f2c5a4fbfb9b2d703</PackageHash>
+        <InstallTarHash>b842a826487a105ae5d8409d7fa9a7e030802ac9</InstallTarHash>
+        <PackageURI>o/opera-stable/opera-stable-84.0.4316.31-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>opera</Name>
+            <Homepage>https://www.opera.com/</Homepage>
+            <Packager>
+                <Name>Pisilinux Community</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
         <Name>osmo</Name>
         <Summary xml:lang="en">Osmo is a handy personal organizer, which includes calendar, tasks manager, address book and notes modules.</Summary>
         <Description xml:lang="en">Osmo is a handy personal organizer, which includes calendar, tasks manager, address book and notes modules. It was designed to be a small, easy to use and good looking PIM tool to help to manage personal information. In its current state the organizer is quite convenient to use - for example, the user can perform nearly all operations using the keyboard. Also, a lot of parameters are configurable to meet the user&apos;s preferences. On the technical side, Osmo is GTK+ based tool which uses a plain XML database to store all personal data.</Description>
@@ -2340,125 +2459,6 @@
         <Source>
             <Name>osmo</Name>
             <Homepage>http://osmo-pim.sourceforge.net/</Homepage>
-            <Packager>
-                <Name>PisiLinux Community</Name>
-                <Email>admins@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>opera-stable</Name>
-        <Summary xml:lang="en">Opera Web Browser</Summary>
-        <Description xml:lang="en">Opera Web Browser</Description>
-        <PartOf>unknown</PartOf>
-        <License>EULA</License>
-        <RuntimeDependencies>
-            <Dependency>atk</Dependency>
-            <Dependency>gtk3</Dependency>
-            <Dependency>libxcb</Dependency>
-            <Dependency>at-spi2-atk</Dependency>
-            <Dependency>at-spi2-core</Dependency>
-            <Dependency>nss</Dependency>
-            <Dependency>cups</Dependency>
-            <Dependency>curl</Dependency>
-            <Dependency>dbus</Dependency>
-            <Dependency>gtk2</Dependency>
-            <Dependency>nspr</Dependency>
-            <Dependency>zlib</Dependency>
-            <Dependency>cairo</Dependency>
-            <Dependency>expat</Dependency>
-            <Dependency>gconf</Dependency>
-            <Dependency>glib2</Dependency>
-            <Dependency>libXi</Dependency>
-            <Dependency>pango</Dependency>
-            <Dependency>libX11</Dependency>
-            <Dependency>libgcc</Dependency>
-            <Dependency>libXext</Dependency>
-            <Dependency>libXtst</Dependency>
-            <Dependency>alsa-lib</Dependency>
-            <Dependency>libXfixes</Dependency>
-            <Dependency>libXrandr</Dependency>
-            <Dependency>libnotify</Dependency>
-            <Dependency>fontconfig</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libXcursor</Dependency>
-            <Dependency>libXdamage</Dependency>
-            <Dependency>libXrender</Dependency>
-            <Dependency>libXScrnSaver</Dependency>
-            <Dependency>libXcomposite</Dependency>
-            <Dependency>gsettings-desktop-schemas</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="1">
-                <Date>2022-03-16</Date>
-                <Version>84.0.4316.31</Version>
-                <Comment>Opera version bump.</Comment>
-                <Name>Erkan IŞIK</Name>
-                <Email>erkanisik@gmail.com</Email>
-            </Update>
-        </History>
-        <BuildHost>farm_yerel</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>2.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>247859214</InstalledSize>
-        <PackageSize>81729758</PackageSize>
-        <PackageHash>e95d6586e1842dff20d5872f2c5a4fbfb9b2d703</PackageHash>
-        <InstallTarHash>b842a826487a105ae5d8409d7fa9a7e030802ac9</InstallTarHash>
-        <PackageURI>o/opera-stable/opera-stable-84.0.4316.31-1-p2-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>opera</Name>
-            <Homepage>https://www.opera.com/</Homepage>
-            <Packager>
-                <Name>Pisilinux Community</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>opusfile</Name>
-        <Summary xml:lang="en">Library for opening, seeking, and decoding .opus files</Summary>
-        <Summary xml:lang="tr">Library for opening, seeking, and decoding .opus files</Summary>
-        <Description xml:lang="en">Library for opening, seeking, and decoding .opus files</Description>
-        <Description xml:lang="tr">Library for opening, seeking, and decoding .opus files</Description>
-        <IsA>library</IsA>
-        <PartOf>unknown</PartOf>
-        <License>BSD</License>
-        <RuntimeDependencies>
-            <Dependency>libogg</Dependency>
-            <Dependency>libopus</Dependency>
-            <Dependency>openssl</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="2">
-                <Date>2020-06-27</Date>
-                <Version>0.12</Version>
-                <Comment>Version bump</Comment>
-                <Name>PisiLinux Community</Name>
-                <Email>admins@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2020-03-07</Date>
-                <Version>0.11</Version>
-                <Comment>First release</Comment>
-                <Name>PisiLinux Community</Name>
-                <Email>admins@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>farm_yerel</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>2.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>90015</InstalledSize>
-        <PackageSize>37739</PackageSize>
-        <PackageHash>412e5c65e0989eebe6c2ea42f937d71afbed5cc8</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>o/opusfile/opusfile-0.12-2-p2-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>opusfile</Name>
-            <Homepage>https://opus-codec.org/</Homepage>
             <Packager>
                 <Name>PisiLinux Community</Name>
                 <Email>admins@pisilinux.org</Email>
@@ -3355,15 +3355,14 @@
     </Package>
     <Package>
         <Name>yt-dlp</Name>
-        <Summary xml:lang="en">Multimedia downloader.</Summary>
-        <Description xml:lang="en">A youtube-dl fork with additional features and fixes.</Description>
+        <Summary xml:lang="en">A youtube-dl fork with additional features and fixes.</Summary>
+        <Description xml:lang="en">The main focus of this project is adding new features and patches while also keeping up to date with the original project.</Description>
         <PartOf>unknown</PartOf>
         <License>Public Domain</License>
         <History>
             <Update release="1">
-                <Date>2023-06-24</Date>
-                <Version>2023.06.22</Version>
-                <Comment>First build.</Comment>
+                <Date>2023-10-12</Date>
+                <Version>2023.10.07</Version>
                 <Name>fury</Name>
                 <Email>uglyside@yandex.ru</Email>
             </Update>
@@ -3372,11 +3371,11 @@
         <Distribution>PisiLinux</Distribution>
         <DistributionRelease>2.0</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>30096308</InstalledSize>
-        <PackageSize>29837824</PackageSize>
-        <PackageHash>4bc5e6ba9043d5b85f720e2a48e147d1dda2d67e</PackageHash>
-        <InstallTarHash>9ac0695a4ab6a1f4d3815f77364c819acc623bb9</InstallTarHash>
-        <PackageURI>y/yt-dlp/yt-dlp-2023.06.22-1-p2-x86_64.pisi</PackageURI>
+        <InstalledSize>24983764</InstalledSize>
+        <PackageSize>24728222</PackageSize>
+        <PackageHash>77c2b050a616d3759f8b359e5f53b4d00fd83e68</PackageHash>
+        <InstallTarHash>c04d144ebf988c4b59041523c627b30ba75c053c</InstallTarHash>
+        <PackageURI>y/yt-dlp/yt-dlp-2023.10.07-1-p2-x86_64.pisi</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>yt-dlp</Name>
